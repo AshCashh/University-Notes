@@ -1,0 +1,2 @@
+#ee 
+A transistor is a [[Circuit Elements|Circuit Element]] and semiconductor device used to amplify or switch electrical signals and [[Power]]. It is composed of semiconductor material, usually with at least three terminals for connection to an electronic [[Circuit]]. A [[Voltage]] or [[Current]] applied to one pair of the transistor's terminals controls the current through another pair of terminals. Because the controlled (output) power can be higher than the controlling (input) power, a transistor can amplify a signal.

@@ -1,0 +1,2 @@
+#cs
+The process of discretisation translates a continuous signal into a discrete signal ([[Binary|bits]]). As an example, we can translate voltage levels on microcontroller pins into digital [[Logic Levels]]
