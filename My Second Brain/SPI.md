@@ -47,7 +47,7 @@ CTRLB:
 
 Remember to configure relevant pins as ouputs and alternative pin locations via PORTMUX if required
 
-#### Interrupts
+#### [[Interrupts]]
 Normal mode:
 ![[Pasted image 20230508192744.png]]
 Buffer mode:

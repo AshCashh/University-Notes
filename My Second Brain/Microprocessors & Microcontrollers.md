@@ -5,7 +5,7 @@ A microcontroller is a small computer on a single [[Integrated Circuits|Integrat
 # Microprocessor
 A microprocessor is a computer processor where the data processing logic and control is included on a single [[Integrated Circuits|Integrated Circuit]] or a small number of ICs. The microprocessor contains the arithmetic, logic and control circuitry required to perform the functions of a computer's CPU. The IC is capable of interpreting and executing program instructions and performing arithmetic operations. The microprocessor is a multipurpose, clock-driven, [[Resistor]]-based, digital IC that accepts [[Binary]] data as input, processes it according to [[Instructions]] stored in its memory, provides results as output. Microprocessors contain both combinational logic and sequential digital logic and operate on numbers and symbols represented in the binary number system.
 
-While a microcontroller puts the CPU and all peripherals onto the same chip, a microprocessor houses a more powerful CPU on a single chip that connects to external peripherals. The peripherals include memory, I/O, and control units. The QUTy uses a microcontroller called ATtiny1626, that are within a family of microcontrollers called AVRs.
+While a microcontroller puts the CPU and all peripherals onto the same chip, a microprocessor houses a more powerful CPU on a single chip that connects to external peripherals. The peripherals include memory, [[Input & Output|I/O]], and control units. The QUTy uses a microcontroller called ATtiny1626, that are within a family of microcontrollers called AVRs.
 
 ## ATtiny1626 Microcontroller
 The ATtiny1626 microcontroller has the following features: 

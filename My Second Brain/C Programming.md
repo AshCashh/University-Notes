@@ -1,6 +1,11 @@
 #cs
 C is a programming language used in [[Computer Science]], developed in the early 1970s by Dennis Richie. C is a compiled language, meaning that a separate program is used to efficiently translate the source code into [[Assembly Programming|Assembly]]. It's compilers are capable of targeting a wide variety of [[Microprocessors & Microcontrollers|Microprocessor]] architectures and hence it is used to implement all major operating system kernels. Compared to many other languages, C is very efficient programming language as it constructs map directly onto machine [[Instructions]].
 
+[[C Programming#Pointers]]
+[[C Programming#Addressing]]
+
+
+
 ## Main Function
 C is a procedural language and hence all code subsides in a procedure (known as function). In C, the main function is the entry point to the program. Program execution will generally begin in this function, where we can make calls to other functions.
 ```c
@@ -428,7 +433,8 @@ for (;;) {
 	count++
 }
 ```
-## Pointers
+--- 
+# Pointers
 When a variable is declared, the compiler automatically allocates a block of memory to store that variable. If we want to access this block of memory indirectly, we must use a pointer. In C, pointers are declared as "pointing to" an object of another type.
 ```c
 uint8_t *ptr; // Pointer to a uint8_t variable
@@ -444,6 +450,9 @@ A more common usage of pointers is to reference other variables.
 ```c
 uint8_t x = 5;
 uint8_t *ptr = &x; // Address of x
+printf("Values: %d == %d\nAddresses: %p == %p\n", *ptr, x, ptr, &x);
+// Values: 5 == 5
+// Addresses 0x16b4e7550 == 0x16b4e7550
 ```
 The amperstand (&) operator is used to return the address of the variable x. Here the pointer type of `ptr` must match the type of x.
 
@@ -468,7 +477,7 @@ uint8_t c = *b; // c contains 123
 *b = 0; // Now a contains 0 (c in unchanged)
 ```
 
-## Strings
+# Strings
 In C, strings are represented as arrays of characters, terminated by a character with the value 0. Strings are declared using double quotes ("") and are automatically terminated by a null character.
 ```c
 char *str = "Hello World";
@@ -483,7 +492,44 @@ In the example above, the compiler automatically allocates a block of memory to 
 char *str = "Hello World";
 *str == 'H'; // True
 ```
-When using the `printf` function, the null terminator is required to indicate the end of the string. We will see how to index into strings in the secton on arrays.
+When using the `printf` function, the null terminator is required to indicate the end of the string. We will see how to index into strings in the section on arrays.
+
+Below are alternative ways of declaring and initialising a string. 
+```c
+char myString[] = "cab403Program"; // String literal LEGAL
+char ch[] = {'c', 'a', 'b', '4', '0','3', 'P', 'r', 'o', 'g', 'r', 'a', 'm', '\0'}; //char array LEGAL
+char *cptr = "cab403Program"; // char pointer LEGAL
+```
+## String Input/Output
+### Input
+We can use `scanf()` to take a string input. The syntax for using `scanf()` function to take a string input without spaces.
+```c
+scanf("%s", char *s);
+```
+Here, `s` is a pointer which points to the array of characters where the input taken as a string will be stored.
+
+To include space in the string input, there are a few methods to use. One of which is the scanset expression, which is denoted by `%[]`. Using this with `scanf()` will only process the characters specified inside the square brackets.
+
+The expression `%[^\n]%*c` inside `scanf()` will take the complete line including spaces as a string input, alternatively `%[^\n]s` will also work. For example:
+```c
+char sentence[20];              // array to store string taken as input 
+scanf("%[^\n]s", sentence); // take user input
+```
+#### gets()
+`gets()` takes a complete line as input and stores it in the string provided as parameter. The function keeps reading in input until it encounters a newline character `\n`, once a `\n` isn't included it stops reading.
+```c
+char sentence[20];
+gets(sentence);
+```
+However, `gets()` doesn't care about the size of the character array passed to it and will lead to buffer overflow if more than 30 characters is inputted.
+
+#### fgets()
+An alternative is using the `fgets()` function. The function is similar to `gets()` but we can also specify a maximum size for the string which will be taken as a string input from the user.
+```c
+char sentence[20]; 
+fgets(sentence, 20, stdin); 
+```
+While the `gets()` function converts the `\n` character to `\0` to make it a null-terminated string, the `fgets()` function does not. Instead, it adds a `\0` symbol after the `\n` character to achieve the same
 
 ## Qualifiers
 Various qualifiers can be used to modify the type of a pointer. Typically these qualifiers apply to the memory pointed to by the pointer. If the variable which the pointer points to is constant, the dereference operator cannot be used to reassign the value of the variable.
@@ -500,7 +546,7 @@ uint8_t b = 200; // Variable
 const uint8_t *ptr = &a; // Points to 'a' but treats it as a constant
 ptr = &b; // Valid: 'ptr' is not a constant
 ```
-If the qualifier is placed after the asterisk, the pointer itself is constant, meaning it cannot be reassgned to another address.
+If the qualifier is placed after the asterisk, the pointer itself is constant, meaning it cannot be reassigned to another address.
 ```c
 uint8_t a = 100; // Variable
 uint8_t b = 200; // Variable
@@ -573,8 +619,9 @@ uint16_t b = 200;
 sizeof(a); // Returns 1
 sizeof(b): // Returns 2
 ``` 
+---
 
-## Arrays
+# Arrays
 Array types are used to hold multiple values of the same type in a contiguous block of memory. Arrays can be declared in the following ways:
 ```c
 uint8_t a[10]; // Arrays of 10 uint8_t
@@ -838,6 +885,14 @@ volatile uint8_t *portb_outclr = (volatile uint8_t *)0x0426;
 ```
 This does not make code more portable, but it tells the compiler that the programmer is aware of the conversion that it is intentional.
 
+Below is an example of type casting:
+```c
+int sum = 17, count = 5;
+double mean;
+
+mean = (double) sum / count;
+printf("Value of mean : %f\n", mean ); // Value of mean : 3.400000
+```
 ### Types of Type Casting
 ##### Numeric Types
 Numeric types (signed or unsigned) will expand or narrow the type, resulting in the value being truncated or zero extended.
@@ -866,8 +921,40 @@ uint16_t addr = (uint16_t)ptr; // addr = 0x1234;
 ```
 These conversions are not portable, but can be necessary when accessing memory mapped IO.
 
+```c
+int *p1, *p2;
+double *q;
+void *v;
+
+// Legal assignments 
+p1 = 0; // Same as null
+p1 = (int *) 1;
+p1 = p2;
+p2 = v;
+p1 = (int *) q; // Casts q into an int pointer, stores in p1.
+
+// Illegal assignments
+p1 = q;
+p2 = 1;
+```
+### Void pointers and Type Casting
+```c
+void *ptr;    // Void pointer
+char a = 'A'; // Character 'A'
+int b = 2;    // Integer 2
+float c = 3;  // Float 3
+
+ptr = &a;     // Address of a
+printf("\nThe value of a = %c\n",*((char*)ptr)); // The value of a = A
+
+ptr = &b;
+printf("\nThe value of b = %d\n",*((int*)ptr)); // The value of b = 2
+
+ptr = &c;
+printf("\nThe value of c = %f\n",*((float*)ptr)); // The value of c = 3.000000
+```
 ##### Modifying Qualifiers
-Casting can also be used to add/remove qualifers such as `const` and `voltatile`, however the following will not work on the ATtinty1626 because the const qualifer usually results in that variable being stored in SRAM or read-only memory locations.
+Casting can also be used to add/remove qualifiers such as `const` and `voltatile`, however the following will not work on the ATtinty1626 because the const qualifer usually results in that variable being stored in SRAM or read-only memory locations.
 ```c
 const uint8_t a = 10;
 const uint8_t *b = &a;
@@ -883,6 +970,12 @@ uint16_t b = 10000;
 uint32_t c = a * b; // c = 45696 (incorrect)
 uint32_t d = (uint32_t)a * b; // d = 250000000
 ```
+# Memory
+
+
+
+
+
 # Objects 
 ## Structures
 Structures are way to group related data together.
@@ -902,7 +995,7 @@ Struct members can also be initialised using braces as with arrays.
 ```c
 struct Point p = {30, 40};
 ```
-Unlike arrays, structures are not passed can be passed between functions and copied normally.
+Unlike arrays, structures can be passed between functions and copied normally.
 ```c
 void func(struct Point p){
 	p.x = 50;
@@ -1112,64 +1205,6 @@ struct {
 
 printf("%lu\n", sizeof(bits)); // Prints 2
 ```
-## Interrupts
-An interrupt is a signal sent to the processor to indicate that it should interrupt the current code that is being executed to execute a function called an **interrupt service routine** (or interrupt handler). Rather than polling for individual events (such as button presses), interrupts allow the processor to be notified when an event occurs.
-
-Summarised Interrupts are used by hardware/peripherals to let the CPU know something has happened.
-
-### Interrupts and the AVR
-On the ATtiny1626, interrupts work as follows:
-1. An interupt-worthy event occurs. (e.g. data transferred, overflow of a timer)
-2. The appropriate interrupt flag (INTFLAGS) in he peripheral is set.
-3. If the corresponding interrupt is enabled (INTCTRL field of the peripheral), the interrupt is triggered and we proceed to the following step.
-4. If the global interrupt flag (SREG.I) is set, the interrupt can be executed and we proceed to the following step.
-5. The PC is pushed onto the stack and jumps to the interrupt vector (the address of the interrupt handler) See page 63-64 on datasheet.
-
-### Interrupt Vectors
-The interrupt vector is a table of addresses that the processor jumps to when an interrupt is triggered. These addresses are usually at the begnining of the program memory.
-
-### Interrupt Service Routine
-The code that handles the interrupt is called the interrupt service routine (ISR) (or interrupt handler). The ISR is a function that is executed as a result of the interrupt.
-When congiuring an interrupt, we must temporarily disable interrupts globally to prevent the interrupt from being triggered while we are configuring it.
-```c
-cli(); // Disable interrupts globally
-// Configure interrupts
-sei(): // Enable interrupts globally
-```
-It is also important to restore the state of the CPU or registers before the ISR returns. This is because another inerrupt can be triggered while the ISR is executing. To tackle this, we can use the `ISR` macro from the `avr/interrupt.h` header file which will automatically save and restore the state of the CPU and registers.
-```c
-#include <avr/interrupt.h>
-
-ISR(TCBO_INT_vect) {
-	// Interrupt service routine for TCBO
-}
-```
-The header file also sets aside program memory for the interrupt vector table.
-
-### Interrupt Flags
-Each peripheral has an interrupt flag field (INTFLAGS) that is set when the conditions for that interrupt occur (even if interrupts are disabled). The exact format of this field depends on the type of interrupt, but in general a bit is set for the type of interrupt.
-
-As some peripherals have 1 interrupt vector with multiple interrupt sources, the interrupt flag fields can be used to determine the exact source of the interrupt.
-The interrupt flag field is cleared by writing a 1 to the corresponding bit.
-
-### Peripheral Interrupts
-Peripherals differ in what causes interrupts to be raised and many have multiple interrupt sources.
-
-**Port Interrupts**
-To configure `BUTTON0` as an interrupt source, we must enable the interrupt in the `PORTA.PIN4CTRL` peripheral.
-```c
-ISR(PORTA_PORT_vect) {
-	// Interrupt service routine for PORTA
-	VPORTA.INFLAGS = PIN4_bm; // Clear interrupt flag
-}
-cli();
-// Enable pull-up resistor and interrupt on falling edge
-PORTA.PIN4CTRL |= PORT_BULLUPEN_bm | PORT_ISC_FALLING_gc;
-sei();
-```
-### Interrupts and Synchronisation
-ISR's may interact with state used by other code running at the same time, which can cause problems with synchronisation, similar to those faced with multithreaded programming. To avoid this, we should make use of the `volatile` keyword so that the compiler does not make assumptions about variable states. The `cli` and `sei` functions can also be used to disable interrupts and create a memory barrier which prevents instructions from being reordered by the compiler.
-
 # Compilation
 C source code is translated into machine code through a compiler, whereas assembly code is translated into machine code through an assembler. While some compilers emit assembly code, others emit machine code directly.
 
@@ -1242,6 +1277,5 @@ where s is the sign bit, m is the mantissa and e is the exponent. Note that valu
 
 The flexibility of floating point numbers means that arithmetic operations are expensive if not performed on a Floating Point Unit (FPU). As AVR does not have an FPU, floating point operations must be handled using the ALU instructions which can be significantly slower tha integer operations. In addition, floating point operations require the `avr-libc` floating point library to be linked which increases the size of the program.
 
-## Fixed Point Math
 
 

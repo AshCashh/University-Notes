@@ -1,6 +1,7 @@
 ---
 alias: LAN, WANs, MANs
 ---
+#cs
 # Local Area Network (LAN)
 A [[Networks|Network]] that interconnects devices within a limited geographic area, e.g. university, campus, office.
 

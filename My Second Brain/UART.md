@@ -125,7 +125,7 @@ Alternatively, we can use interrupts to signal when the peripheral is read for n
 - Read/write ISRs will always return in a deterministic amount of time
 - The CPU can be doing other computations while the peripheral hardware is busy.
 
-#### Interrupt Handling
+#### [[Interrupts|Interrupt]] Handling
 ![[Pasted image 20230508191836.png]]
 
 Example

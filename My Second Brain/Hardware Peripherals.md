@@ -13,7 +13,7 @@ In general:
 1. Set bits on peripheral registers to configure the peripheral in the correct mode
 2. Enable peripheral interrupts and define an associated ISR, if required
 3. Enable the peripheral
-It is best practice to globally disable interrupts when configuring peripherals
+It is best practice to globally disable [[Interrupts]] when configuring peripherals
 
 ## Timers
 Timers provide precise measurements of elapsed clock cycles in hardware, independent of software and the CPU. Timers are used to generate period events (via an interrupt), measure time between two events, generate periodic signals on a pin that are frequency of [[Pulse Width Modulation]] etc.

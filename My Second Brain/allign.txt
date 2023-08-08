@@ -1,0 +1,383 @@
+Top left:
+
+ldi r16, PIN2_bm ; high (set) for 0, low (clr) for 1
+    sts PORTC_OUTCLR, r16
+    sts PORTC_DIRSET, r16
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ;Q0
+    sts PORTC_DIRSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTCLR, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+//////////////
+
+CLEAR
+ldi r16, PIN2_bm ; high (set) for 0, low (clr) for 1
+    sts PORTC_OUTCLR, r16
+    sts PORTC_DIRSET, r16
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ;Q0
+    sts PORTC_DIRSET, r16
+
+    sts PORTC_OUTCLR, r16 
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTSET, r16
+    
+
+///////// 
+    ; 7 RHS
+
+    ; MOSI = PC2 high (set) for 0, low (clr) for 1
+    ; CLK = PC0
+    ; LATCH = PA1
+
+    ldi r16, PIN2_bm 
+    sts PORTC_OUTCLR, r16
+    sts PORTC_DIRSET, r16
+    sts PORTC_OUTCLR, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; ON 
+    sts PORTC_DIRSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; OFF
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTCLR, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; ON
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; ON
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; OFF
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTCLR, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; ON
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN2_bm
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; OFF
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN0_bm
+    sts PORTC_OUTCLR, r16 ; OFF
+    sts PORTC_OUTSET, r16
+
+    ldi r16, PIN1_bm
+    sts PORTA_OUTCLR, r16
+    sts PORTA_DIRSET, r16
+    sts PORTA_OUTCLR, r16
+    sts PORTA_OUTSET, r16
+
+```````
+#include <avr/io.h> // Include register definitions
+
+.section .init0     // Places code at the top of programme memory
+
+entry:
+    
+    // Ex E2.0
+    // 
+    // U2 is an IC which controls the 2-digit, 7-segment display 
+    // on the QUTy. It is a shift register, and is controlled by 
+    // its three digital input pins, which are connected to nets 
+    // SPI CLK, SPI MOSI and DISP LATCH. 
+    // 
+    // The shift register's outputs, Q0-Q6 drive the LED segments 
+    // of the display in an active-low configuration. Output Q7
+    // selects the LHS or RHS digit via U3 and U4.
+    //
+    // We will learn how to elegantly drive the 7-segment display
+    // in future weeks, but you now have enough tools to be able
+    // to gain rudimentary control of the display using a process
+    // called "bit-banging". The term "bit-banging" refers to the
+    // the sequencing and control of general purpose input/output 
+    // (GPIO) pins to implement some protocol or interface to a
+    // device. We would usually use a peripheral in preference to
+    // bit-banging.
+    //
+    // The shift register has 8-bits of internal memory. When the
+    // input connected to the DISP LATCH net goes from LOW to HIGH, 
+    // the state of this internal memory sets the state of outputs 
+    // Q0-Q7. When the input connected to the SPI CLK net goes from 
+    // LOW to HIGH (rising edge), bit 0 of the internal memory is set 
+    // to the current state of the input connected to net SPI MOSI.
+    // Simultaneously, the data in internal memory is shifted by
+    // one bit position (bit 1 takes its new value from bit 0, etc.).
+    //
+    // For example, if we wanted to turn all segments of the display
+    // off, we could:
+    //   1) Drive SPI MOSI high
+    //   2) Repeat 8x times: drive SPI CLK low, drive SPI CLK high
+    //   3) Drive DISP LATCH low
+    //   4) Drive DISP LATCH high
+    //
+    // If instead you wanted to turn some segments on, rather than
+    // leaving SPI MOSI high the entire time, you would need to 
+    // drive it to an appropriate state prior to driving SPI CLK
+    // high each time. In this way you can independently set each 
+    // bit in the internal memory of the shift register (and 
+    // consequently, the corresponding output state).
+    //
+    // EXERCISE: Write assembly code below to configure the display 
+    // on the QUTy to display the final digit of your student number. 
+    // If the final digit of your student number is EVEN, it should 
+    // be displayed on the left-hand-side (LHS) digit of the display. 
+    // If the final digit of your student number is ODD, it should 
+    // be displayed on the right-hand-side (RHS) digit of the display. 
+    //
+    // EXAMPLE: If your student number were n12345678, 
+    //          "8" should be displayed on the LHS digit.
+    //
+    // Write your code for Ex E2.0 below this line.
+
+    ; 7 RHS
+
+    ldi r16, PIN2_bm ; MOSI
+    ldi r17, PIN1_bm ; CLK
+    ldi r18, PIN0_bm ; DISP LATCH.   ; MOSI r18, 16 CLk
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_DIRSET, r16
+    sts PORTC_OUTCLR, r16
+
+    sts PORTC_OUTCLR, r18 ; ON 
+    sts PORTC_DIRSET, r18
+
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r18 ; OFF
+    sts PORTC_OUTSET, r18
+
+    sts PORTC_OUTCLR, r16
+
+    sts PORTC_OUTCLR, r18 ; ON
+    sts PORTC_OUTSET, r18
+
+    sts PORTC_OUTCLR, r18 ; ON
+    sts PORTC_OUTSET, r18
+
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r18 ; OFF
+    sts PORTC_OUTSET, r18
+
+    sts PORTC_OUTCLR, r16
+
+    sts PORTC_OUTCLR, r18 ; ON
+    sts PORTC_OUTSET, r18
+
+    sts PORTC_OUTSET, r16
+
+    sts PORTC_OUTCLR, r18 ; OFF
+    sts PORTC_OUTSET, r18
+
+    sts PORTC_OUTCLR, r18 ; OFF
+    sts PORTC_OUTSET, r18
+
+    ; DISP LATCH
+    sts PORTA_OUTCLR, r17
+    sts PORTA_DIRSET, r17
+    sts PORTA_OUTSET, r17
+
+    // Write your code for Ex E2.0 above this line.
+
+// END OF EXTENSION02 EXERCISES //
+// DO NOT EDIT BELOW THIS LINE //
+
+    break // Stop here for autograder
+
+loop:
+    rjmp loop
+
+////////////
+#include <avr/io.h> // Include register definitions
+
+.section .init0     // Places code at the top of programme memory
+    ldi r16, PIN2_bm ; MOSI
+    
+    ldi r18, PIN0_bm ; CLK
+
+    sts PORTC_OUTCLR, r16
+    sts PORTC_DIRSET, r16
+
+    sts PORTC_OUTCLR, r18 ; ON 
+    sts PORTC_DIRSET, r18
+
+; subroutine for high
+HIGH: 
+    sts PORTC_OUTCLR, r16
+    sts PORTC_OUTCLR, r18
+    sts PORTC_OUTSET, r18 
+
+    ret 
+
+LOW:
+    sts PORTC_OUTSET, r16
+    sts PORTC_OUTCLR, r18
+    sts PORTC_OUTSET, r18 
+
+    ret
+
+entry:
+    
+    // Ex E2.0
+    // 
+    // U2 is an IC which controls the 2-digit, 7-segment display 
+    // on the QUTy. It is a shift register, and is controlled by 
+    // its three digital input pins, which are connected to nets 
+    // SPI CLK, SPI MOSI and DISP LATCH. 
+    // 
+    // The shift register's outputs, Q0-Q6 drive the LED segments 
+    // of the display in an active-low configuration. Output Q7
+    // selects the LHS or RHS digit via U3 and U4.
+    //
+    // We will learn how to elegantly drive the 7-segment display
+    // in future weeks, but you now have enough tools to be able
+    // to gain rudimentary control of the display using a process
+    // called "bit-banging". The term "bit-banging" refers to the
+    // the sequencing and control of general purpose input/output 
+    // (GPIO) pins to implement some protocol or interface to a
+    // device. We would usually use a peripheral in preference to
+    // bit-banging.
+    //
+    // The shift register has 8-bits of internal memory. When the
+    // input connected to the DISP LATCH net goes from LOW to HIGH, 
+    // the state of this internal memory sets the state of outputs 
+    // Q0-Q7. When the input connected to the SPI CLK net goes from 
+    // LOW to HIGH (rising edge), bit 0 of the internal memory is set 
+    // to the current state of the input connected to net SPI MOSI.
+    // Simultaneously, the data in internal memory is shifted by
+    // one bit position (bit 1 takes its new value from bit 0, etc.).
+    //
+    // For example, if we wanted to turn all segments of the display
+    // off, we could:
+    //   1) Drive SPI MOSI high
+    //   2) Repeat 8x times: drive SPI CLK low, drive SPI CLK high
+    //   3) Drive DISP LATCH low
+    //   4) Drive DISP LATCH high
+    //
+    // If instead you wanted to turn some segments on, rather than
+    // leaving SPI MOSI high the entire time, you would need to 
+    // drive it to an appropriate state prior to driving SPI CLK
+    // high each time. In this way you can independently set each 
+    // bit in the internal memory of the shift register (and 
+    // consequently, the corresponding output state).
+    //
+    // EXERCISE: Write assembly code below to configure the display 
+    // on the QUTy to display the final digit of your student number. 
+    // If the final digit of your student number is EVEN, it should 
+    // be displayed on the left-hand-side (LHS) digit of the display. 
+    // If the final digit of your student number is ODD, it should 
+    // be displayed on the right-hand-side (RHS) digit of the display. 
+    //
+    // EXAMPLE: If your student number were n12345678, 
+    //          "8" should be displayed on the LHS digit.
+    //
+    // Write your code for Ex E2.0 below this line.
+
+    ; 7 RHS
+
+    ldi r17, PIN1_bm ; DISP LATCH
+
+    call HIGH
+
+    call LOW
+
+    call HIGH
+
+    call HIGH
+
+    call LOW
+
+    call HIGH
+
+    call LOW
+
+    call LOW
+
+    ; DISP LATCH
+    sts PORTA_OUTCLR, r17
+    sts PORTA_DIRSET, r17
+    sts PORTA_OUTSET, r17
+
+    // Write your code for Ex E2.0 above this line.
+
+// END OF EXTENSION02 EXERCISES //
+// DO NOT EDIT BELOW THIS LINE //
+
+    break // Stop here for autograder
+
+loop:
+    rjmp loop
+
+
+

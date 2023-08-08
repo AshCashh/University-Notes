@@ -1,9 +1,9 @@
-#cs
+
 ---
 alias: Assembly
 ---
+#cs
 ## Flow control
-
 Instructions on the AVR Core increment the PC by 1 or 2 (depending on whether the OPCODE is 1 or 2 words) when they are executed so that any successive [[Instructions]] are executed after the first. To divert execution to a different location, we can utilise change of flow instructions.
 The jmp (jump) instruction is used to simply jump to a different location in the program. This instruction is capable of jumping to an address within the entire 4M (words) program memory, however, this is highly excessive for the ATtiny1626.
 

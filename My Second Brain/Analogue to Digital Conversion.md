@@ -1,8 +1,8 @@
 #cs
 ## Analogue to Digital Conversion
-Analogue signals or [[Sinusoidal Signals]] to digital signals conversion (ADC) is a technique used to convert an analogue singal to a digital signal. The analogue signal is sampled at a regular interval and the sampled value is converted to a digital value. Digital quantities are both discrete in amplitude and time. 
+Analogue signals or [[Sinusoidal Signals]] to digital signals conversion (ADC) is a technique used to convert an analogue signal to a digital signal. The analogue signal is sampled at a regular interval and the sampled value is converted to a digital value. Digital quantities are both discrete in amplitude and time. 
 
-Specialised hardware called an analogue to digital converter performs this function. An ADC takes a sample of a continous signal at an instant in time, if the signal is time-varying it takes multiple samples. The quality of the conversion depends on a number of factors, such as resolution and sample rate.
+Specialised hardware called an analogue to digital converter performs this function. An ADC takes a sample of a continuous signal at an instant in time, if the signal is time-varying it takes multiple samples. The quality of the conversion depends on a number of factors, such as resolution and sample rate.
 
 ### Sampling
 When we discretise in time, this is referred to as sampling. The sampling rate determines the time resolution and introduces aliasing error. On a [[Microprocessors & Microcontrollers|Microcontroller]], time resolution is typically the period of the CPU clock.

@@ -17,7 +17,7 @@ Smaller symbols are more flexible and allow for more symbols to be transmitted, 
 If the information to be changed can be entirely encoded within a single symbol, there is no need for a message structure. However, more complex protocols require a message structure for large quantities of data or information of variable length. This is done by dividing the communication into discrete messages.
 
 ## Encoding
-The choice of encoding may also be of concern, depending on the communication medium, symbol length, and other factors such as human readability. For example using the entire ASCII character set may not be desireable as it is not human readable. Human readable encoding schemes usually limit the number of sysmbols to a small subset of the ASCII character set:
+The choice of encoding may also be of concern, depending on the communication medium, symbol length, and other factors such as human readability. For example using the entire ASCII character set may not be desirable as it is not human readable. Human readable encoding schemes usually limit the number of symbols to a small subset of the ASCII character set:
 - ASCII `32-126 (0x20-0x7E)` which uses 8-bit symbols
 - Base64 `(0-9, A-Z, a-z, +, /)` which encodes 6-bits into an 8-bit symbol.
 - Hexadecimal `(0-9, A-F)` which encodes 4-bits per symbol
@@ -85,7 +85,7 @@ When the reciever operates on little power or low storage, the sender may not be
 Many serial protocols are designed to be simple to parse, due to the limited hardware or typical devices using serial communication. Howver, there are concersn around timing, state and buffers that need to be considered, especially when the device needs to do multiple thing at a time. For example, `scanf()` is flexible enought ot parse many simple message structures (if you can spare the program memory), it is a blocking function; highly undesirable in a controller that needs to be able to do other things at the same time.
 
 ## Timing Considerations
-Other actions can be carried out at the same time as blocking operations throught interrupts, for example, one of the TCBs could be used to generate regular interrupts so that other work can be done while waiting on blocking I/O operations. However, this would push the burden of maintaining state on the other work, and likely waste many CPU cycles unnecessarily. A better choice is to use the `UART_RX` interrupt to handle a single character at a time, then use a [[State Machines|State Machine]] to handle the parasing of the message. 
+Other actions can be carried out at the same time as blocking operations through [[Interrupts]], for example, one of the TCBs could be used to generate regular interrupts so that other work can be done while waiting on blocking I/O operations. However, this would push the burden of maintaining state on the other work, and likely waste many CPU cycles unnecessarily. A better choice is to use the `UART_RX` interrupt to handle a single character at a time, then use a [[State Machines|State Machine]] to handle the parasing of the message. 
 
 This state machine can be placed within the interrupt handler, or in a seperate function that is called in the main loop. The state machine can be implemented to consider the follow:
 1. Idle: The paraser is waiting for a start sequence (and ignore all other symbols)

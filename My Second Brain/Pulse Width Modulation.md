@@ -99,7 +99,7 @@ The period (TCA0.PER) and compare (TCA0.CMPn) registers are double buffered.
 - To avoid this, we write to the buffered version of the registers, and the hardware copies from the buffer registers into the active registers at a safe time.
 - For single-slope PWM mode, updates will occur when CNT = BOTTOM.
 
-### Interrupts
+### [[Interrupts]]
 The TCA (in normal mode) has four interrupt sources: OVF, CMP0, CMP1, CMP2. Note that each of these sources is handled by a separate interrupt vector. The CMPn interrupts are triggered when CNT == CMPn for the respective channel. For single-slope PWM mode, the OVF interrupt is triggered when CNT == TOP. Each of these interrupts can be independently enabled via TCA0.INTCTRL.
 
 ### Reccommended configuration steps

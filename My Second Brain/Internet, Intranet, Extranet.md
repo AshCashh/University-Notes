@@ -1,6 +1,7 @@
 ---
 alias: Internet, Intranet, Extranet
 ---
+#cs
 # Internet
 The Internet (or internet) is the global system of interconnected computer [[Networks]] that uses the [[Internet Protocol Suite]] (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business and government networks of local to global scope, linked by a broad array of electronic, wireless and optical networking technologies. The Internet carries a vast range of information resources and services such as the interlinked hypertext documents and applications of the [[World Wide Web]] (WWW), electronic mail, telephony and file sharing.
 

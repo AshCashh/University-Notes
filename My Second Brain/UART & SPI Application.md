@@ -76,7 +76,7 @@ This display is updated by writing to the variables `left_byte` and `right_byte`
 This is a good canidate for intrrupt-driven programming. We need to make regular updates to the display (at say > 50Hz). 
 - This will have to happen continously, so a delay loop is infeasible if we are going to anything else in our prgramme.
 - LSH and RHS digits should be displayed for equal times, so the display update process is time critical
-- A good application for periodic interrupts from a timer
+- A good application for periodic [[Interrupts]] from a timer
 
 The actual serial communication process can be handled by the SPI peripheral. We just need to trigger regular SPI writes by loading data into the DATA register
 
