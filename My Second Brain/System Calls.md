@@ -1,4 +1,4 @@
-#cs
+#cs #os
 System calls provide an interface to the services made available by an [[Operating Systems]]. These calls are generally available as functions written in C and C++.
 
 Example of system calls to copy contents of one file to another file:

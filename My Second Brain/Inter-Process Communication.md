@@ -1,3 +1,4 @@
+#cs #os
 [[Process|Processes]] executing concurrently in the [[Operating Systems|OS]] may be either independent processes or cooperating processes. A process is **independent** if it does not share data with any other processes executing in the system. A process is **cooperating** if it can affect or be affected by the other processes executing in the system.
 
 There are several reasons for providing an environment that allows process cooperation:
@@ -14,8 +15,8 @@ Cooperating processes require an **interprocess communication** (IPC) mechanism 
 ## IPC in Shared-Memory Systems
 Interprocess communication using shared memory requires communicating processes to establish a region of shared memory. To illustrate the concept of cooperating processes, consider the producer-consumer problem. 
 
-A producer process produces information that is consumed by a consumer process. For example, a compiler may produce assembly code that is consumed by an assembler. Or think of a server as a producer and a client as a consumer, a web-serve will produce web content such as HTML files and images, which are consumed by the client web browser requesting the resource. The producer and consumer must be synchronised using buffers such that the consumer does not try to consume an item that has not yet been produced.
-- **Unbounded buffer:** Places no practical limit on the size of the buffer. So the consumer may have to wait for new items, while the consumer can always produce items.
+A producer process produces information that is consumed by a consumer process. For example, a compiler may produce assembly code that is consumed by an assembler. Or think of a server as a producer and a client as a consumer, a web-server will produce web content such as HTML files and images, which are consumed by the client web browser requesting the resource. The producer and consumer must be synchronised using buffers such that the consumer does not try to consume an item that has not yet been produced.
+- **Unbounded buffer:** Places no practical limit on the size of the buffer. So the consumer may have to wait for new items, while the producer can always produce items.
 - **Bounded buffer:** Assumes a fixed buffer size. So the consumer must wait if the buffer is empty, and the producer must wait if the buffer is full.
 
 An example of how the bounded buffer will communicate using shared memory can be seen below. Here the two variables reside in a region of memory shared by the producer and consumer processes:
@@ -25,41 +26,20 @@ An example of how the bounded buffer will communicate using shared memory can be
 typedef struct { 
 	... 
 } item; 
+
 item buffer[BUFFER_SIZE]; 
-int in = 0; 
-int out = 0;
+int in = 0; // Points to next free position in the buffer
+int out = 0; // Points to the first full position in the buffer
 ```
 Here the variable `in` points to the next free position in the buffer and `out` points to the first full position in the buffer. The buffer is empty when `in == out` and the buffer is full when `((int + 1) % BUFFER_SIZE) == out`. 
 
 The code below demonstrates how the producer and consumer can share memory, and how the producer will wait/check till the consumer has consumed and respectfully the consumer will wait/check till the producer has produced. This scheme allows at most `BUFFER_SIZE - 1` items in the buffer at the same time.
 
-#### Producer Process
-```c
-item next_produced;
+| Producer                             | Consumer |
+| :------------------------------------: | :--------: |
+| ![[Code Snippets#^ProducerProcess2]] | ![[Code Snippets#^ConsumerProcess2]]         |
 
-while (true){
-	// Produce an item in next_produced
-
-	while (((in + 1) % BUFFER_SIZE) == out){
-		// Do nothing
-	} 
-	buffer[in] = next_produced;
-	in = (in + 1) % BUFFER_SIZE;
-}
-```
-#### Consumer Process
-```c
-item next_consumed;
-
-while (true){
-	while (in == out){
-		// Do nothing
-	}
-	next_consumed = buffer[out];
-	out = (out + 1) % BUFFER_SIZE;
-	// Consume the item in next_consumed
-}
-```
+One issue this illustration does not address concerns the situation in which both the producer process and the consumer process attempt to access the shared buffer concurrently.
 ## IPC in Message-Passing Systems
 Another model for interprocess communication is message-passing. Message-passing provides a mechanism to allow processes to communicate and synchronise their actions without sharing the same address space (variables/memory). It is particularly useful in a distributed environment, where the communication processes may reside on different computers connected by a network.
 

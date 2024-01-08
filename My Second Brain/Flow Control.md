@@ -1,6 +1,8 @@
 #cs
+Flow control is a mechanism [[Network Communication#Software Component|Network Protocols]] use to prevent a destination device from becoming overwhelmed by data from a transmitting computer, resulting in dropped packets. 
+
 [[Instructions]] on the AVR Core increment the PC by 1 or 2 (depending on whether the OPCODE is 1 or 2 words) when they are executed so that any successive instructions are executed after the first. To divert execution to a different location, we can utilise change of flow instructions.
-The jmp (jump) instruction is used to simply jump to a different location in the program. This instruction is capable of jumping to an address within the entire 4M (words) program memory, however, this is highly execessive for the [[Microprocessors & Microcontrollers#ATtiny1626 Microcontroller|ATtiny1626]].
+The jmp (jump) instruction is used to simply jump to a different location in the program. This instruction is capable of jumping to an address within the entire 4M (words) program memory, however, this is highly excessive for the [[Microprocessors & Microcontrollers#ATtiny1626 Microcontroller|ATtiny1626]].
 
 ## Labels
 Most change of flow instructions take an address in program memory as a parameter. Hence to make this process easier, we can use labels to refer to locations in program memory (and also RAM).

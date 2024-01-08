@@ -1,7 +1,7 @@
 ---
 alias: Computer
 ---
-#cs
+#cs #os
 A Computer System is the combination of [[Hardware]], [[Software]], user and data.
 
 ## Computer System Structure 

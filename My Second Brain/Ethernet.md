@@ -1,4 +1,4 @@
-#cs
+#cs #networks
 Ethernet is a family of wired computer networking technologies commonly used in [[LAN, WAN, MAN]]. It was introduced in 1980 and standardised in 1983 as IEEE 802.3. The protocol has evolved and improved over time to transfer data. The system now has three main speeds: 10Mbps, 100Mbps and 1Gbps. 
 
 Although there are many variations of Ethernet, all forms are similar in their basic operation and frame formatting. What differs in variations are the cabling, speed of transmission and method by which bits are encoded on the medium. Because frame formatting are the same, Ethernet variations are therefore compatible with on another. Hence why [[Network Interface Card]] and switches are described as 10/100 or 10/100/1000 devices. These devices can support multiple Ethernet speeds.
@@ -24,7 +24,7 @@ The media access method that Ethernet uses in [[Serial Communication#Serial Comm
 - **Collision Detection**: If two or more stations transmit, a collision occurs and is detected by the NIC; all stations must retransmit
 
 ## Ethernet Error Handling
-One reason for Ethernet's low cost and scalability is its simplicity. It's considered a best-effort delivery system, meaning that when a frame is sent, theres no acknowledgment or verification that the frame arrived at its intended destination. Ethernet relies on network protocols like [[Internet Protocol Suite|TCP/IP]] to ensure reliable delivery of data.
+One reason for Ethernet's low cost and scalability is its simplicity. It's considered a best-effort delivery system, meaning that when a frame is sent, theres no acknowledgment or verification that the frame arrived at its intended destination. Ethernet relies on network protocols like [[Transmission Control Protocol & Internet Protocol Suite|TCP/IP]] to ensure reliable delivery of data.
 
 Ethernet also detects whether a frame has been damaged in transit. The error-checking code in a frame's trailer is called a Cyclic Redundancy Check (CRC) (Handled in the [[Open System Interconnection#Data Link Layer|Data Link Layer]]). If a frame is detected as damaged, it is simply discarded with no notification.
 

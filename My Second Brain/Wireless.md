@@ -1,4 +1,4 @@
-#cs
+#cs #networks
 A wireless network is a [[Computer System]] [[Networks|Network]] that uses wireless data connections between network nodes.
 
 ## Wireless Benefits

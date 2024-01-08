@@ -1,4 +1,4 @@
-#cs
+#cs #networks
 Network media are the materials through which [[Networks|Network]] signals travel between devices. Typical examples include copper [[Cables]] or glass fiber or simply the air. When physical material is used as the [[Network Communication#Hardward Component|Medium]], it refers to wired networking and when signals are transmitted through the air, the medium is called [[Wireless]].
 
 ## Criteria for Choosing Network Media

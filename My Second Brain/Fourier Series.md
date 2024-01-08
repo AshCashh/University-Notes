@@ -1,7 +1,7 @@
 #math
 A Fourier series is an expansion of a periodic function, in terms of an infinite sum of [[Trigonometric Functions]]. 
 
-## Fourier Series Expansion
+# Fourier Series Expansion
 The Fourier Series Expansion of a function $x(t)$ on the interval $[t_0,t_0+T]$ is given by:
 $$x_F(t)=a_0+\sum_{n=1}^{\infty}(a_n\space cos(2\pi nf_0t)+b_n\space sin(2\pi nf_0t))\tag{1}$$
 where $n$ is any positive integer and $f_0=\cfrac{1}{T}$, $T$ is the period of the function. The coefficients are given by:
@@ -58,6 +58,12 @@ $$
 ![[Pasted image 20230807203637.png]]
 
 
+
+
+### Important result about convergence
+If a periodic function $f(t)$ with period $T$ is differentiable at all except finitely many points in the interval $[t_0,t_0+T]$ then the Fourier series with coefficients given by Euler's formulae is convergent.
+The sum of the series at all points $t\in [t_0,t_0+T]$ is $f(t)$ at all points where $f(t)$ is continuous. 
+If $f(t)$ is discontinuous at a point $t\in [t_0,t_0+T]$ then the sum of the series is the average value of the left and right limits of $f(t)$ at $\hat{t}$ 
 # Complex Fourier Series
 The Complex Fourier Series Expansion is a concise form of the Fourier series expansion that uses complex exponentials with a single unknown coefficient.
 $$s(t)=\sum_{n=-\infty}^{\infty}c_ne^{j2\pi nf_0t}\tag{1}$$
@@ -83,7 +89,7 @@ The * denotes [[Complex Numbers#Complex Conjugate|Complex Conjugate]]. Any real 
 
 ## Magnitude and Phase Spectra
 As $c_n$ is a complex number, consider the polar representation of $c_n$:
-$$c_n=|c_n|e^{j\theta_n}$$so that the **Magnitude Spectra** is given by $|c_n|$ and the phase spectra is given by $\theta_n$. 
+$$c_n=|c_n|e^{j\theta_n}$$so that the **Magnitude Spectra** is given by $|c_n|$ and the **Phase Spectra** is given by $\theta_n$. 
 
 The plot of $|c_n|$ against frequency ($n$) is known as the Magnitude Spectrum and the plot of $\theta_n$ against frequency ($n$) is called the Phase Spectrum.
 

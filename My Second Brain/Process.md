@@ -1,3 +1,7 @@
+---
+alias: Processes
+---
+#cs #os
 An [[Operating Systems]] executes a variety of programs, either a Batch system (jobs) or a Time-shared system (user program or task). A process is a program in execution and must progress in sequential fashion. A process consists of multiple parts:
 - **Text Section**, containing the executable code
 - The current activity, i.e. the **Program Counter** and the contents of the processors register
@@ -28,10 +32,8 @@ Each process is represented in the OS by a process control block (PCB) - also ca
 
 ![[Pasted image 20230803223831.png|centre|300]]
 In brief, the PCB simply serves as the repository for all the data needed to start, or restart, a process along with some accounting data.
-
-## Threads
+## [[Threads]]
 The process model discussed so far has implied that a process is a program that performs a single thread of execution. However, most modern OS have extended the process concept to allow a process to have multiple threads of execution and thus to perform more than one task at a time. This feature is especially beneficial on multicore systems, where multiple threads can run in parallel. A multithreaded word processor could for example, assign one thread to manage user input while another runs the spell checker. On systems that support threads, the PCB is expanded to include information for each thread. 
-
 ### Process Representation in Linux
 ![[Pasted image 20230803230033.png|400]]
 

@@ -1,7 +1,7 @@
 ---
 alias: I/O
 ---
-#cs
+#cs #os
 In [[Computer Science]], input/output (I/O) is the communication between an information processing system (a compiler) and the outside world, possibly a human or another IPS.
 
 ## I/O Structure

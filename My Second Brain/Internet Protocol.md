@@ -1,8 +1,8 @@
-#cs
-```
+---
 alias: IP
-```
-An Internet Protocol or IP address is assigned to every computer and network device using [[Internet Protocol Suite|TCP/IP]] for communication. IP addresses are used for two main reasons:
+---
+#cs #networks
+An Internet Protocol or IP address is assigned to every computer and network device using [[Transmission Control Protocol & Internet Protocol Suite|TCP/IP]] for communication. IP addresses are used for two main reasons:
 - To identify a network device at the Internetwork layer
 - To identify the network on which a device resides
 
@@ -52,7 +52,6 @@ There are currently two versions of IP:
 - **Destination Address Field:** Indicates the IP address of the destination node
 ## IP Fragmentation
 Fragmentation is necessary for data transmission, as every network has a unique limit, i.e. the maximum transmission unit (MTU), for the size of datagrams that it can process. If a datagram is being sent that is larger than the receiving server's MTU, it has to be fragmented in order to be transmitted completely. 
-
 #### Fragmentation Offset Calculation Example
 ![[Pasted image 20230803165433.png]]
 

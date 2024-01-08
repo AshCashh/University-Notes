@@ -21,3 +21,4 @@ $$=5cos\left(-\cfrac{\pi}{3}\right)+5jsin\left(-\cfrac{\pi}{3}\right)$$
 The complex conjugate of a complex number is the number with an equal real part and an imaginary part equal in magnitude but opposite in sign. That is, if $a$ and $b$ are real numbers then the complex conjugate of $a+bi$ is $a-bi$. The complex conjugate of $z$ is often denoted as $\overline{z}$ or $z^*$. 
 
 In polar form, if $r$ and $\theta$ are real numbers then the conjugate of $re^{i\theta}$ is $re^{-i\theta}$.
+

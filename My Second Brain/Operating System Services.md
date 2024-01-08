@@ -1,3 +1,4 @@
+#cs #os
 An [[Operating Systems|Operating System]] provides an environment for the execution of programs and services to programs and users.
 ![[Pasted image 20230730141708.png]]
 - **User Interface (UI)**: Almost all OSs have a user interface. Most commonly a graphical user interface (GUI) is used although command-line interface (CLI) or Batch is also seen.

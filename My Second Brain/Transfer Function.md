@@ -12,7 +12,7 @@ Find $H(\omega)$ for $f=5000Hz$ using the transfer function in previous example
 $$\mathbf{H}(\omega)=\cfrac{10000}{j\omega+10000}$$
 Remember: $\omega=2\pi f$, therefore:
 $$\omega=2\times5000\pi =10000\pi= 31416 \space rads^{-1}$$
-Substitude:
+Substitute:
 $$\mathbf{H}(10000\pi)=\cfrac{10000}{j10000\pi+10000}=\cfrac{1}{j\pi+1}=0.303\angle-72.3\degree$$
 
 ##### Applying Transfer Function Example

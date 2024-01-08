@@ -12,8 +12,6 @@ Here $a_n=\cfrac{1}{n},$ for $n=1,2,\dots$ or $\left\{\cfrac{1}{n}\right\}_{n=1}
 $$1,-1,1,-1,1,-1,\dots$$
 Here $a_n=(-1)^{n-1}$ or $\{(-1)^{n-1}\},$ for $n=1,2\dots$
 
-
-
 ### Limits of Sequences:
 A sequence $\{a_n\}$ has the limit $L$ if $a_n$ approaches $L$ as $n$ approaches infinity. We write:
 $$ \lim_{n\to\infty}a_n=L\space\text{or}\space a_n\to L \space \text{as} \space n\to \infty$$
@@ -118,7 +116,9 @@ $$\begin{align}
 
 \end{align}
 $$
-then the series converges.
+then the series converges, else it diverges.
+
+If $a_n=1$, then it'll fail the 2nd test and diverge
 ### Example
 Does $\displaystyle\sum_{n=1}^{\infty}\cfrac{(-1)^{n-1}}{n}$ converge or diverge?
 

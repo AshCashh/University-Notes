@@ -1,5 +1,5 @@
 #ee
-Electronic filters are a type of [[Signal Processing]] filter in the form of electronic [[Circuit|Circuits]] designed to allow certain ranges of [[Frequency|Frequencies]] to pass, while other ranges of frequencies are stopped.
+Electronic filters are a type of [[Signal Analysis|Signal Processing]] filter in the form of electronic [[Circuit|Circuits]] designed to allow certain ranges of [[Frequency|Frequencies]] to pass, while other ranges of frequencies are stopped.
 
 ## Ideal Filters
 ![[Pasted image 20230514002912.png]]

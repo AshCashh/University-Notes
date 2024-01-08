@@ -1,4 +1,4 @@
-#cs
+#cs #os
 System programs or services provide a convenient environment for program development and execution. They can be divided into these categories:
 - **File manipulation**: These programs create, delete, copy, rename, print, list, and generally access and manipulate files and directories.
 - **Status information:** Some programs simply ask the system for the date, time, amount of available memory or disk space, number of users, or similar status information.

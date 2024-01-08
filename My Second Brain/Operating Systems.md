@@ -1,4 +1,7 @@
-#cs
+---
+alias: OS
+---
+#cs #os
 An operating system (OS) is system software that manages computer [[Hardware]] and [[Software]] resources and provides common services for computer programs.
 
 For hardware functions such as input and output and memory allocation, the operating system acts as an intermediary between programs and the computer hardware, although the application code is usually executed directly by the hardware and frequently makes system calls to an OS function or is interrupted by it. 
@@ -11,20 +14,17 @@ A single-tasking system can only run one program at a time, while a multi-taskin
 Single-user operating systems have no facilities to distinguish users but may allow multiple programs to run in tandem. A multi-user operating system extends the basic concept of multi-tasing with facilities that identify processes and resources, such as disk space, belonging to multiple users and the system permits multiple users to interact with the system at the same time.
 
 ## Distributed
-A distributed operating system manages a group of distinct, networked computers and makes them appear to be a single computer, as all [[Computation|Computations]] are distributed.
+A [[Distributed Systems|Distributed Operating System]] manages a group of distinct, networked computers and makes them appear to be a single computer, as all [[Computation|Computations]] are distributed.
 
 ## Embedded
 [[Embedded Systems]] are designed to be used in embedded computer systems. They are designed to operate on small machines with less autonomy (e.g. PDAs). They are very compact and extremely efficient by design and are able to operate with a limited amount of resources. Windows CE and Minix 3 and some examples.
 
 ## Real-Time
 A real-time operating system is an operating system that guarantees to process events or data by a specific moment in time. A real-time operating system may be single or multi-tasking, but when multitasking it uses specialised scheduling algorithms so that a deterministic nature of behaviour is achieved. 
-
-
 # Week 1
 [[Computer System]]
 [[Interrupts]]
 [[Input & Output|I/O]]
-
 # Week 2
 [[Operating System Structures]]:
 - [[Operating System Structures#Monolithic Structure|Monolithic Structure]]
@@ -44,3 +44,27 @@ A real-time operating system is an operating system that guarantees to process e
 - [[Operations on Processes#Process Creation|Process Creation]]
 - [[Operations on Processes#Process Termination|Process Termination]]
 [[Inter-Process Communication]]
+# Week 4
+[[Threads]]
+[[Threads#Multicore Programming|Multicore Programming]]
+[[Multithreading Models]]
+[[Implicit Threading]]
+# Week 5
+[[Process Synchronisation]]
+[[Mutex Locks & Semaphores]]
+[[Starvation]]
+[[Problems of Synchronisation]]:
+- [[Inter-Process Communication#IPC in Shared-Memory Systems|Consumer-Producer Problem]] 
+[[Monitors]]
+# Week 6
+-
+# Week 7
+[[Distributed Systems]]
+[[Socket Programming]]
+# Week 8
+[[CPU Scheduling]]
+[[Scheduling Algorithms]]
+[[Multi-Processor Scheduling]]
+# Week 9
+[[Deadlocks]]
+[[Deadlock Prevention,Avoidance]]

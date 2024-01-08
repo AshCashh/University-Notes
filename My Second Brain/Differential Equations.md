@@ -22,6 +22,21 @@ Laplace's equation:
 $$\Delta u=0$$
 where $u$ is typically a function of space ($x,y,z$) or space-time ($x,y,z,t$).
 
+# Partial Derivatives
+Let $f:\mathbb{R}^2\to\mathbb{R}$ be a [[Scalar Fields|Scalar Field]], then the two partial derivates are:
+$$\cfrac{\partial f}{\partial x}=\lim_{h\to0}\cfrac{f(x+h,y)-f(x,y)}{h},$$
+$$\cfrac{\partial f}{\partial y}=\lim_{h\to0}\cfrac{f(y+h,x)-f(x,y)}{h},$$
+Also use notation $f_x$ and $f_y$ to denote these partial derivates.
+
+The interpretation of $f_x$ is the rate of change of $f$ in the $x$-direction (with respect to $x$) and hold $y$ as a constant.
+
+The geometric interpretation for $f_x$ and $f_y$ are the slopes of the surface $z=f(x,y)$ in the $x$- and $y$-directions, respectively.
+
+### Example
+Given $f(x,y)=y^4+2xy^3+x^2y^2$, calculate the partial derivative $f_x$:
+$$f_x=2y^3+2xy^2$$
+
+
 ## Order
 The order of a differential equation refers to the highest derivative term that appears in the equation.
 

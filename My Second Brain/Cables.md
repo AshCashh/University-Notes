@@ -1,4 +1,4 @@
-#cs
+#cs #networks
 ## Types of Cables
 ### Coaxial Cable 
 Coaxial cable or "coax" for short was the predominant form of networking cabling. 

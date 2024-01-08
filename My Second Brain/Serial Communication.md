@@ -1,4 +1,4 @@
-#cs
+#cs #networks
 In [[Telecommunications]], serial communication is the process of transmitting data one [[Binary|Bit]] at a time. In contrast to parallel communication, where several bits are sent as a whole, on a link with several parallel channels.
 
 On a [[Microprocessors & Microcontrollers|Microcontroller]], this is typically done via a digital I/O pin. 

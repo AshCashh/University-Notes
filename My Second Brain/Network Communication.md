@@ -1,4 +1,4 @@
-#cs
+#cs #networks
 A computer [[Networks|Network]] consists of two or more computers connected by some kind of transmission medium (such as cable or airwaves). In order to access the internet, a computer has to be able to connect to a network. Communication protocols may be implemented by [[Hardware]], [[Software]], or a combination.
 
 ## Network Connectivity
@@ -14,7 +14,7 @@ Some core networking components:
 - **[[Network Interface Card]] (NIC)**
 - **Network Medium**: is the existent path or physical channel used for transmission in the network. An [[Ethernet]] cable is used to attach to the NIC of a computer for wired connections. Wireless NIC translates data into radio signals and then transmits via antenna's for wireless connection.
 - **Interconnecting Device**: Allows two or more computers to communicate on the network without being directly connected to one another:
-	- **Router**: a networking device that forwards data packets between computer networks. Used for connecting multiple networks together.
+	- **[[Routers & Routing|Router]]**: a networking device that forwards data packets between computer networks. Used for connecting multiple networks together.
 	- **Switch**: a device for connecting multiple computers within a network, uses packet switching to receive, process and forward data to the destination device. 
 	- **Access Point (AP)**: Allows wireless devices to connect to a [[Wireless]] network
 
@@ -23,7 +23,7 @@ A switch is used for connecting devices in a network. While a router connects ne
 
 ## Software Component 
 - **Network Clients and Servers**: network client software requests information stored on another network computer or device. Network server software allows a computer to share its resources.
-- **Protocols**: Set of rules for exchanging information such as format. Examples include: [[Internet Protocol Suite]], IEEE 802, Ethernet.
+- **Protocols**: Set of rules for exchanging information such as format. Examples include: [[Transmission Control Protocol & Internet Protocol Suite]], IEEE 802, [[Ethernet]].
 - **NIC Driver**: Receives data from protocols and forwards this data to the physical NIC.
 - **Subnet Mask:** Is used by the TCP/IP protocol to determine whether a host is on the local subnet or on a remote network
 - **Default Gateway:** A router that is specified on a host, which links the host's subnet to other networks.

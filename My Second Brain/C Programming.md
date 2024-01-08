@@ -15,6 +15,9 @@ int main()
 	return 0;
 }
 ```
+
+^d9ce35
+
 The purpose of returning a zero at the end of the main function is to signify the exit status code of the process. An exit status of 0 is traditionally used to indicated sucess, while all non-zero values indicate failure.
 
 ## Statements
@@ -832,6 +835,43 @@ int main(void) {
 	swap(&a, &b);
 }
 ```
+
+# Function Pointers
+Functions and pointers in C have a similar relationship to arrays and pointers. Function pointers work because functions are just an area of memory that contains machine instructions. If we have a memory address that we know contains this code, we can call it like any other function.
+
+Here is the function prototype / signature for stdlib's qsort:
+```c 
+void qsort(void *base, size_t nmemb, size_t size, int (*cmpar)(const void *, const void *));
+```
+All this means is that qsort takes a pointer to a function with the signature:
+```c
+int (*cmpar)(const void *, const void *)
+```
+Below is a step by step breakdown of function pointer syntax.
+
+Start with the signature:
+```c
+int myFunc(double num, int array[], const char *string);
+```
+Just like prototypes you can remove the argument names:
+```c
+int myFunc(double, int[], const char *);
+```
+Enclose the function pointer name in parentheses and add a * to made this a pointer declaration.
+```c
+int (*myFunc)(double, int[], const char *);
+```
+Most of the time you will also want to give it a new name, as the existing function already uses that name
+```c
+int (*myFuncPtr)(double, int[], const char *);
+```
+You can now use this type in an argument list or a variable declaration: 
+```c
+void funcCaller(int (*myFuncPtr)(double, int[], const char *));
+```
+
+
+
 ### Call Stack
 As functions can call other functions, or even call themselves, local variables inside functions are stored on the stack. The return address of where a function is called from is also stored on the stack so that the program counter can be set to that address when the function returns. Local variables inside functions do not increase the explicit SRAM usage reported by the compiler. Rather, this memory will be allocated on the stack when the function is called. Therefore, it is important to ensure that the stack does not overflow, through recursive functions or large local variables.
 
@@ -1265,7 +1305,7 @@ Any non-static symbols are implicitly global, and can be accessed from any trans
 # Floating Point Types
 In C, floating point types are represented as 32-bit IEEE 754 single precision floating point numbers. The `float` type is a 32-bit floating point number and the `double` type is a 64-bit floating point number. 
 
-A single precision floating point number has a 1-bit sign, 8-bit exponent, and 23-bit mantissa. As such, the range of a single precision floating point number is $-2^{127}...2^{127}$. A floating point number $f$ can be represneted as:
+A single precision floating point number has a 1-bit sign, 8-bit exponent, and 23-bit mantissa. As such, the range of a single precision floating point number is $-2^{127}...2^{127}$. A floating point number $f$ can be represented as:
 $$ f = (-1)^s(1+2^{-23}m)2^{e-127}$$
 where s is the sign bit, m is the mantissa and e is the exponent. Note that values are not equally spaced. There are several special values that can be represented by floating point numbers.
 - $e = 255 \rightarrow 2^{128}$:
@@ -1276,6 +1316,4 @@ where s is the sign bit, m is the mantissa and e is the exponent. Note that valu
 	$-m$ is not all 0s: Subnormal numbers
 
 The flexibility of floating point numbers means that arithmetic operations are expensive if not performed on a Floating Point Unit (FPU). As AVR does not have an FPU, floating point operations must be handled using the ALU instructions which can be significantly slower tha integer operations. In addition, floating point operations require the `avr-libc` floating point library to be linked which increases the size of the program.
-
-
 
