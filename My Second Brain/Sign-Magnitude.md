@@ -1,6 +1,9 @@
-#cs
-
-In [[Mathematics]], sign/magnitude notation is the simplest and most obvious methods of encoding positive and negative numbers. Represented with a $+$ for positive numbers and $-$ for negative numbers.
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+In [[Mathematics]], sign/magnitude notation is the simplest and most obvious methods of [[Encoding]] positive and negative numbers. Represented with a $+$ for positive numbers and $-$ for negative numbers.
 
 However in [[Computer Science]], the sign-magnitude represents the most significant [[Binary|bit]], which encodes the sign of the integers. In an 8-bit sequence, the remaining 7-bits are used to encode the value of the bit.
 - If the sign bit is 0, the remaining bits represent a positive value.

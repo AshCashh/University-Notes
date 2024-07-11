@@ -1,7 +1,13 @@
 ---
-alias: Computer
+aliases:
+  - Computer
+  - Computers
+tags:
+  - cs
+  - os
+Created: 2023-07-22T21:45:12+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #os
 A Computer System is the combination of [[Hardware]], [[Software]], user and data.
 
 ## Computer System Structure 

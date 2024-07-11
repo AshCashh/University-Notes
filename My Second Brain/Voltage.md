@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:26:38+10:00
+---
 Voltage (*v*), also known as electric pressure, electric tension or the *electrical potential difference* between two points in a [[Circuit]], measured in Volts (V).
 - Voltage is measured across a [[Circuit Elements|Circuit Element]] or between two points in a [[Circuit]], commonly with respect to a 0 V reference (GND). 
 - It represents the potential of the electrical system to do [[Work]].

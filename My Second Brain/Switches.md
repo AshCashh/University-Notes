@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:34:08+10:00
+---
 A switch is a [[Circuit Elements|Circuit Element]] used to connect and disconnect different elements in a circuit
 
 A switch can be open or closed:

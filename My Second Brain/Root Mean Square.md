@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Root mean square (rms) is a method of obtaining a useful average of a signal that is symmetric about the horizontal axis. It is defined as the square root of the mean value of the function squared. For a sine wave:
 $$ V_{rms} = \cfrac{V_m}{\sqrt{2}},\phantom{AAA} I_{rms} = \cfrac{I_m}{\sqrt{2}}$$
 where $V_m/I_m$ is the magnitude

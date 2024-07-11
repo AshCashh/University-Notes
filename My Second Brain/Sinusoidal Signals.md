@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A sinusoidal signal is commonly referred to as Alternating Current (AC).
 ![[Pasted image 20230508110922.png|centre|400]]
 We can describe the signal with a cosine function:
@@ -27,10 +31,7 @@ $$ \phi = \cfrac{\tau}{T}\times360\degree$$
 - Blue signal is ahead in time
 Difference $\tau$ is 0.16 seconds
 Phase is:
-$$\phi = \cfrac{0.16}{1} \times 360\degree = 60\degree$$
-
-
-#### Negative Phase Example
+$$\phi = \cfrac{0.16}{1} \times 360\degree = 60\degree$$#### Negative Phase Example
 ![[Pasted image 20230430151144.png|400]]
 - Red dashed signal has phase of 0 degrees
 - Blue signal is a delayed version

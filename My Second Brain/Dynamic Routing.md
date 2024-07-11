@@ -1,4 +1,10 @@
-#cs #networks 
+---
+tags:
+  - networks
+  - cs
+Created: 2023-08-20T12:03:39+10:00
+Modified: 2024-07-10T19:03:04+10:00
+---
 Dynamic routing is when the [[Routers & Routing|Routers]] themselves communicate with each other, exchanging routing information. The process involves three main stages:
 1. Initialisation
 2. Sharing
@@ -24,19 +30,7 @@ IGP is used for routing inside an autonomous system (AS), which is an internetwo
 
 ## Exterior Gateway Protocol
 EGP are used for routing between autonomous systems, such as between an organisations network and an ISP or between two ISPs, e.g. Border Gateway Protocol (BGP).
-# Dynamic Routing Algorithms
-## Distance Vector Algorithm
-Based on the Bellman Ford Algorithm, the distance vector algorithm is a dynamic routing algorithm where:
-- On boot, a router initialises its routing table to contain an entry for each directly connected network
-- Each router periodically shares its knowledge about the entire routing table to all its interfaces, e.g. "I can reach destination V at distance D via X"
 
-Distance vector routers periodically broadcast/multicast their route information on directly connected links. Because of this it does tend to perform poorly in large networks.
-
-## Link State Algorithm 
-Based on the Dijkstra's Least-Cost algorithm, the algorithm finds all possible paths between two locations and in doing so, gets the least cost path. It does this by having each router generate information about only its direct connected links, hence building adjacencies with neighbouring routers. Most common implementation: Open Shortest Path First (OSPF).
-![[Pasted image 20230820133413.png|300]]
-
-Link state advertisements (LSAs) are exchanged throughout the network in order to update routing tables. LSAs are advertised only upon startup and when changes in topology are detected (not periodically).
 ## Routing Information Protocol 
 Routing Information Protocol (RIP) is the most popular and best-known distance-vector routing protocol on the internet. It uses hop count as the metric to determine the best path to a destination network.
 

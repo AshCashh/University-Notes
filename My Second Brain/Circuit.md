@@ -1,4 +1,9 @@
-#ee
+---
+tags:
+  - ee
+Created: 2023-07-06T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A circuit is a [[Mathematics|Mathematical]] model that approximates a system.
 
 There are three basic [[Circuit Elements]]:

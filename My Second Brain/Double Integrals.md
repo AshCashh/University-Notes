@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-08-31T18:45:23+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+[[Mathematics]]
 Let $S$ be a surface given by the equation:
 $$z=f(x,y)$$
 and let $R$ be a region in the $xy$-plane.

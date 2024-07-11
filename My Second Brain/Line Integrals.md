@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-09-14T11:31:01+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+[[Mathematics]]
 # Line Integrals in 2D
 Remember the definite integrals:
 $$\int_a^bg(x)\space dx$$

@@ -1,7 +1,9 @@
 ---
 alias: OS
+tags: [cs, os]
+Created: 2023-07-10T19:10:38+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #os
 An operating system (OS) is system software that manages computer [[Hardware]] and [[Software]] resources and provides common services for computer programs.
 
 For hardware functions such as input and output and memory allocation, the operating system acts as an intermediary between programs and the computer hardware, although the application code is usually executed directly by the hardware and frequently makes system calls to an OS function or is interrupted by it. 

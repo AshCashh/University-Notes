@@ -1,4 +1,8 @@
-#cs #networks
+---
+tags: [cs, networks]
+Created: 2023-07-25T10:38:29+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Network architecture is the design of a computer [[Networks|Network]]. It is a framework for the specification of a network's physical components and their functional organisation and configuration, its operational principles and procedures, as well as [[Network Communication|Communication Protocols]] used.
 
 There are two reference models:

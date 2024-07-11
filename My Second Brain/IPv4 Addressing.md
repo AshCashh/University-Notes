@@ -1,4 +1,8 @@
-#cs #networks
+---
+tags: [cs, networks]
+Created: 2023-08-05T15:57:08+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 An [[Internet Protocol]] version 4 or IPv4 address consists of 32-bit numbers divided into four 8-bit values called "octets". Each octet can have a value from 0 to 255 and are separated by dotted decimals. For example, in the address `10.255.0.100`, 10 is the first octet and 100 the fourth octet.
 
 ## IP Address Classes

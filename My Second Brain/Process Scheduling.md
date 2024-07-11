@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-08-04T21:20:30+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The objective of multiprogramming is to have some [[Process]] running at all times so as to maximise CPU utilisation. A process scheduler is used to determine which process should be executed. The number of processes currently in memory is known as the degree of multiprogramming
 
 As processes enter the system they are put into a **ready queue**, where they wait to execute on a CPU's core. This queue is generally stored as a linked list; a ready-queue header contains pointers to the first PCB in the list. When a process enters the system, it's put into a **ready queue** where it then waits to be executed. When a process is allocated a CPU core for execution it executes for a while and eventually terminates, is interrupted or waits for the occurrence of a particular event. Any process waiting for an event to occur gets placed into the **wait queue**. 

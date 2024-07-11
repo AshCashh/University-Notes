@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-08-21T12:48:32+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In [[Process Synchronisation]], a number of problems like the [[Process Synchronisation#Critical Section Problem|Critical Section Problem]], arise due to concurrent [[Process|Processes]] that may access shared information.
 
 These problems are used for testing nearly every newly proposed synchronisation scheme. In the following solutions, [[Mutex Locks & Semaphores|Semaphores]] will be used for synchronisation as it is the traditional way to present such solutions.
@@ -14,7 +18,7 @@ The producer and consumer structure consists of:
 
 | Producer                             | Consumer |
 | :------------------------------------: | :--------: |
-| ![[Code Snippets#^ProducerProcess3]] | ![[Code Snippets#^ConsumerProcess3]]         |
+| ![[C Code Snippets#^ProducerProcess3]] | ![[C Code Snippets#^ConsumerProcess3]]         |
 
 # Reader-Writers Problem
 Suppose that a database is to be shared among several concurrent processes. 
@@ -38,7 +42,7 @@ Below is the structure of the reader and writer process:
 
 | Writer Process                    | Reader Process |
 | :---------------------------------: | :--------------: |
-| ![[Code Snippets#^WriterProcess]] | ![[Code Snippets#^ReaderProcess]]               |
+| ![[C Code Snippets#^WriterProcess]] | ![[C Code Snippets#^ReaderProcess]]               |
 
 Note that, if a writer is in the critical section and n readers are waiting, then one reader is queued on `rw_mutex`, and $n − 1$ readers are queued on mutex. Also observe that, when a writer executes `signal(rw_mutex)`, we may resume the execution of either the waiting readers or a single waiting writer. The selection is made by the scheduler.
 

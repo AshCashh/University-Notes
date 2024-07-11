@@ -1,7 +1,11 @@
 ---
 alias: Network
+tags:
+  - cs
+  - networks
+Created: 2023-07-20T12:33:57+10:00
+Modified: 2024-07-10T21:40:22+10:00
 ---
-#cs #networks
 A computer network is a set of [[Computer System|Computers]] sharing resources located on or provided by network nodes. Computers use common communication protocols over digital interconnections to communicate with each other. These interconnections are made up on telecommunication network technologies based on physically wired, optical and wireless radio-frequency methods that may be arranged in a variety of network topologies.
 
 ## Encapsulation
@@ -31,7 +35,7 @@ Wired [[Network Media]]:
 - [[Serial Communication]]
 [[Wireless]] Network Media:
 - [[Network Interface Card|NIC]]
-- [[Wi-Fi]]
+- Wi-Fi
 # Week 3
 [[Internet Protocol]]
 [[IPv4 Addressing]]
@@ -75,3 +79,8 @@ Wired [[Network Media]]:
 # Week 11
 [[Network Address Translation]] (NAT)
 [[IPv6]]
+
+```dataview
+TABLE Created, Modified
+FROM #networks 
+```

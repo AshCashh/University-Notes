@@ -1,4 +1,8 @@
-#cs
+---
+tags: [algorithm]
+Created: 2023-07-06T08:47:13+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Minimax (sometimes referred as Minimax, MM or saddle point) is a kind of backtracking [[Algorithm]] that is used in decision making and game theory to find the optimal move for a player, assuming that your opponent also plays optimally.
 
 It's formal definition is:

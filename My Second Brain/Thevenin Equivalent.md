@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:32:08+10:00
+---
 The Thevenin equivalent circuit is a [[Voltage Source]] with a [[Resistor]] in [[Series Circuits|series]].
 Characterised by three related parameters: $v_{Th}$ $R_{Th}$ and $i_{sc}$ 
 ![[Pasted image 20230323113403.png|300]]

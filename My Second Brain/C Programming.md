@@ -1,10 +1,14 @@
-#cs
-C is a programming language used in [[Computer Science]], developed in the early 1970s by Dennis Richie. C is a compiled language, meaning that a separate program is used to efficiently translate the source code into [[Assembly Programming|Assembly]]. It's compilers are capable of targeting a wide variety of [[Microprocessors & Microcontrollers|Microprocessor]] architectures and hence it is used to implement all major operating system kernels. Compared to many other languages, C is very efficient programming language as it constructs map directly onto machine [[Instructions]].
+---
+aliases:
+  - C
+tags: [cs, define]
+Created: 2023-02-27T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+C is a [[Programming]] language used in [[Computer Science]], developed in the early 1970s by Dennis Richie. C is a compiled language, meaning that a separate program is used to efficiently translate the source code into [[Assembly Programming|Assembly]]. It's compilers are capable of targeting a wide variety of [[Microprocessors & Microcontrollers|Microprocessor]] architectures and hence it is used to implement all major operating system kernels. Compared to many other languages, C is very efficient programming language as it constructs map directly onto machine [[Instructions]].
 
 [[C Programming#Pointers]]
 [[C Programming#Addressing]]
-
-
 
 ## Main Function
 C is a procedural language and hence all code subsides in a procedure (known as function). In C, the main function is the entry point to the program. Program execution will generally begin in this function, where we can make calls to other functions.
@@ -18,7 +22,7 @@ int main()
 
 ^d9ce35
 
-The purpose of returning a zero at the end of the main function is to signify the exit status code of the process. An exit status of 0 is traditionally used to indicated sucess, while all non-zero values indicate failure.
+The purpose of returning a zero at the end of the main function is to signify the exit status code of the process. An exit status of 0 is traditionally used to indicated success, while all non-zero values indicate failure.
 
 ## Statements
 C programs are made up of statements. Statements are placed within scopes (indicated by braces ({})) and are executed in the order they are placed. All statements in C must terminate with a semicolon (;). Although assembly instructions translate to a single OPCODE, a single C statement can translate to multiple OPCODEs.
@@ -359,7 +363,7 @@ int main()
 }
 ```
 ## Definitions
-The #define directive is used to define preprocessor macros. Whenever these macros appear in the source file, they are replaced with the value specified by the macros. Macros are a simple text teplacement mechanism, and this must be defined carefully to avoid invalid code from being generated.
+The directive is used to define preprocessor macros. Whenever these macros appear in the source file, they are replaced with the value specified by the macros. Macros are a simple text teplacement mechanism, and this must be defined carefully to avoid invalid code from being generated.
 ```c
 #include <stdio.h>
 #define PI 3.14159265358979
@@ -436,7 +440,7 @@ for (;;) {
 	count++
 }
 ```
---- 
+---
 # Pointers
 When a variable is declared, the compiler automatically allocates a block of memory to store that variable. If we want to access this block of memory indirectly, we must use a pointer. In C, pointers are declared as "pointing to" an object of another type.
 ```c

@@ -1,4 +1,8 @@
-#networks 
+---
+tags: [networks]
+Created: 2023-09-13T20:15:59+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Network security can mean different things to different people. To [[Networks|Network]] users, network security is sometimes considered a necessary evil that takes the form of hard-to-remember passwords that must be changed frequently and cryptic terms, such as VPN and IPsec to describe methods they use to access the network. To other users, network security means the comfort of knowing that if they erase their hard drives accidentally, a network administrator will gladly restore their data from the most recent system backup.
 # Cyber Security Terms
 - **Vulnerability**: A weakness is a system, application or network that is subject to exploitation or misuse. 

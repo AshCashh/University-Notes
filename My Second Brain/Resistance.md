@@ -1,5 +1,9 @@
-#ee
-Resistance (R) is a property of a material to resist the flow of [[Current]], measured in Ohms. [[Ohm's Law]] states that the [[Voltage]] across a component is propertional to the current that flows through it:
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+Resistance (R) is a property of a material to resist the flow of [[Current]], measured in Ohms. [[Ohm's Law]] states that the [[Voltage]] across a component is proportional to the current that flows through it:
 $$ v = iR$$
 Where,
 $$ R = \cfrac{v}{i} = \cfrac{1V}{1A} = 1\ohm $$

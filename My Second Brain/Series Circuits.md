@@ -1,7 +1,9 @@
 ---
 aliases: Series Circuit
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#ee
 In a series [[Circuit]], all [[Circuit Elements]] are connected end-to-end to form a single path for [[Current]] flow. If both ends of an element are connected directly to another element, then the connection is considered a [[Parallel Circuits|Parallel Circuit]].
 
 An example of a series circuit can be seen below:

@@ -1,4 +1,8 @@
-#cs #cs
+---
+tags: [cs]
+Created: 2023-08-14T21:34:43+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Support for [[Threads]] may be provided either at the user level, for user threads or by the kernel for kernel threads. User threads are supported above the kernel and are managed without kernel support, whereas kernel threads are supported and managed directly by the [[Operating Systems]].
 The three primary thread libraries: POSIX Pthreads, Windows threads, Java threads.
 ![[Pasted image 20230814213949.png|centre|300]]

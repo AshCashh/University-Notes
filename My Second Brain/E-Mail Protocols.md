@@ -1,4 +1,8 @@
-#networks 
+---
+tags: [networks]
+Created: 2023-09-02T13:01:44+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 All three email protocol are [[Transmission Control Protocol|TCP]] based protocols to ensure reliable delivery of large messages.
 
 Summary:

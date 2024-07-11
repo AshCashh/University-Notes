@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-08-05T08:14:58+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The processes in most systems can execute concurrently, and they may be created and deleted dynamically. Thus, these systems must provide a mechanism for process creation and termination.
 
 # Process Creation

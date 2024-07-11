@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:27:40+10:00
+---
 [[UART]] and [[SPI]] applications on the QUTy. How to virtual COM port via USB-UART bridge and controlling the 7-segment display
 
 ## Virtual COM port via USB-UART bridge

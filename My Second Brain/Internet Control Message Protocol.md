@@ -1,7 +1,9 @@
 ---
 alias: ICMP
+tags: [cs, networks]
+Created: 2023-08-26T18:07:33+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks 
 Internet Control Message Protocol (ICMP) is used to send error, status and control messages between systems or devices. It's an encapsulated [[Internet Protocol|IP]] protocol, meaning it's wrapped in an IP header. In essence, ICMP is just a specialised IP packet with its own header and falls within the Network layer in [[Open System Interconnection|OSI]].
 
 ICMP is used by routers and hosts and assists with the diagnosis of some network problems, performing error reporting and query/reply for the IP. It however only returns error messages back to the originator (the sender). 

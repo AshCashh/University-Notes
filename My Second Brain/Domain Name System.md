@@ -1,7 +1,9 @@
 ---
 alias: DNS
+tags: [networks]
+Created: 2023-09-01T14:04:57+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#networks 
 Domain Name System (DNS) is a name-to-address resolution protocol that keeps a list of computer names and their [[Internet Protocol|IP]] addresses. Through a correctly configured workstation, a user can use a computer's name rather than a numerical address to communicate with the computer. DNS is thought of as the phone book of the [[Internet, Intranet, Extranet|Internet]].
 
 For example, when you enter "www.cengage.com", in your web browser's address box, the web browser contacts the DNS client service on your computer. The DNS client contacts the DNS server specified in your OS's IP configuration and requests that the web address be resolved to an IP address. The DNS server responds with the IP address assigned to the computer name `www` at the `cengage.com` domain. Using this IP address, your web browser application can contact the web server to request a web page. 

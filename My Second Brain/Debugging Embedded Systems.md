@@ -1,4 +1,8 @@
-#cs 
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 We have a very limited view into the internal operation of a [[Microprocessors & Microcontrollers|Microcontroller]]. More sophisticated (often expensive) debugging tools are available for microcontrollers that let you interrogate the contents of memory as your programme is running.
 
 It is important to develop strategies to be able to systematically debug [[Embedded Systems]] when we only have access to basic I/O.

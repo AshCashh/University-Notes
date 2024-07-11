@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-07-10T16:39:31+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Computer programming is the process of performing particular [[Computation|Computations]], usually by designing and building executable computer programs. Programming involves tasks such as analysis, generating [[Algorithm|Algorithms]] and resource consumptions. The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executable by the central processing unit. The purpose of programming is to find a sequence of [[Instructions]] that will automate the performance of a task on a computer, often for solving a given problem.
 
 Tasks accompanying and relating to programming include testing, debugging, source code maintenance, implementation of systems and management of derived artefacts, such as the machine code of computer programs. However, often the term software development is more likely used for this larger overall process - whereas the terms programming, implementation and coding tend to be focused on the actual writing of code.

@@ -1,4 +1,8 @@
-#cs #networks
+---
+tags: [cs, networks]
+Created: 2023-07-24T23:02:51+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A computer [[Networks|Network]] consists of two or more computers connected by some kind of transmission medium (such as cable or airwaves). In order to access the internet, a computer has to be able to connect to a network. Communication protocols may be implemented by [[Hardware]], [[Software]], or a combination.
 
 ## Network Connectivity

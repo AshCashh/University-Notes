@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-07-19T20:30:43+10:00
+Modified: 2024-07-03T19:31:15+10:00
+---
 In [[Electrical Engineering]], a transfer function (also known as system function or network function) of a system, sub-system or component is a [[Mathematics|Mathematical]] function that models the systems output for each possible input. 
 
 The transfer function of a system is given by:
@@ -25,3 +29,8 @@ The $v_s$ gain is 10 and $\mathbf{H}(\omega)$ is $0.303\angle-72.3\degree$, we g
 $$v_a = 0.303\angle-72.3\degree \times 10$$
 $$=3.03cos(31416t-72.3\degree)\space or\space 3.03\angle-72.3\degree$$
 ![[Pasted image 20230508173422.png]]
+
+
+
+$\lfloor{s}\rfloor$
+ 

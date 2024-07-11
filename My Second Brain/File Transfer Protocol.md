@@ -1,7 +1,9 @@
 ---
 alias: FTP, TFTP
+tags: [networks]
+Created: 2023-09-02T13:13:40+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#networks 
 File Transfer Protocol (FTP) is a client/server protocol used to transfer and manage files across a network. FTP uses [[Transmission Control Protocol|TCP]] port `20` and `21`:
 - Port `21` is for sending control commands and 
 - Port `20` is for transferring file data.

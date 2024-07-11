@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-08-05T23:37:23+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 [[Process|Processes]] executing concurrently in the [[Operating Systems|OS]] may be either independent processes or cooperating processes. A process is **independent** if it does not share data with any other processes executing in the system. A process is **cooperating** if it can affect or be affected by the other processes executing in the system.
 
 There are several reasons for providing an environment that allows process cooperation:
@@ -15,7 +19,7 @@ Cooperating processes require an **interprocess communication** (IPC) mechanism 
 ## IPC in Shared-Memory Systems
 Interprocess communication using shared memory requires communicating processes to establish a region of shared memory. To illustrate the concept of cooperating processes, consider the producer-consumer problem. 
 
-A producer process produces information that is consumed by a consumer process. For example, a compiler may produce assembly code that is consumed by an assembler. Or think of a server as a producer and a client as a consumer, a web-server will produce web content such as HTML files and images, which are consumed by the client web browser requesting the resource. The producer and consumer must be synchronised using buffers such that the consumer does not try to consume an item that has not yet been produced.
+A producer process produces information that is consumed by a consumer process. For example, a compiler may produce assembly code that is consumed by an assembler. Or think of a server as a producer and a client as a consumer, a web-server will produce web content such as [[HTML]] files and images, which are consumed by the client web browser requesting the resource. The producer and consumer must be synchronised using buffers such that the consumer does not try to consume an item that has not yet been produced.
 - **Unbounded buffer:** Places no practical limit on the size of the buffer. So the consumer may have to wait for new items, while the producer can always produce items.
 - **Bounded buffer:** Assumes a fixed buffer size. So the consumer must wait if the buffer is empty, and the producer must wait if the buffer is full.
 
@@ -37,7 +41,7 @@ The code below demonstrates how the producer and consumer can share memory, and 
 
 | Producer                             | Consumer |
 | :------------------------------------: | :--------: |
-| ![[Code Snippets#^ProducerProcess2]] | ![[Code Snippets#^ConsumerProcess2]]         |
+| ![[C Code Snippets#^ProducerProcess2]] | ![[C Code Snippets#^ConsumerProcess2]]         |
 
 One issue this illustration does not address concerns the situation in which both the producer process and the consumer process attempt to access the shared buffer concurrently.
 ## IPC in Message-Passing Systems

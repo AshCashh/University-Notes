@@ -1,4 +1,9 @@
-#networks 
+---
+tags:
+  - networks
+Created: 2023-08-11T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Here we will work through some [[Networks|Network]] [[IPv4 Addressing|IPv4 Addresses]] and [[Subnetting|Subnet]] Masks to determine relevant networking information:
 
 ## Network Address

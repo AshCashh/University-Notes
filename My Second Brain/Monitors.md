@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-08-22T22:35:29+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Although [[Mutex Locks & Semaphores|Semaphores]] provide a convenient and effective mechanism for [[Process Synchronisation]], using them incorrectly can result in timing errors that are difficult to detect. One strategy for dealing with such errors is to incorporate simple synchronisation tools as high-level abstraction that provides a convenient and effective mechanism for process synchronisation.
 
 An abstract data type or ADT - encapsulates data with a set of functions to operate on that data that are independent of any specific implementation of the ADT and only accessible by code within the function.

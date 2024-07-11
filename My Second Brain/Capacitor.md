@@ -1,4 +1,9 @@
-#ee
+---
+tags:
+  - ee
+Created: 2023-05-29T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Capacitors store electrical energy as a voltage. The ratio of voltage to charge across a capacitor is its capacitance, measured in Farads (F):
 $$q = Cv$$
 $$ v(t) = \frac{1}{C}\int_0^t idf + v(0){} $$

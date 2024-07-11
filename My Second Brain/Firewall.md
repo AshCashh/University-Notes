@@ -1,4 +1,8 @@
-#networks
+---
+tags: [networks]
+Created: 2023-09-16T17:10:19+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A firewall is a hardware device or software program that inspects packets going into or out of a [[Networks|Network]] or computer, and then discards or forwards packets based on a set of rules.
 # Firewall Types:
 ## Hardware vs Software

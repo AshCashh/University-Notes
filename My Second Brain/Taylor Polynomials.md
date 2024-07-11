@@ -1,8 +1,12 @@
-#math
+---
+tags: [math]
+Created: 2023-07-29T11:34:54+10:00
+Modified: 2024-07-03T19:32:51+10:00
+---
 Topics Covered:
 Taylor polynomials
 Taylor series, convergence 
-
+[[Mathematics]]
 ## Taylor Polynomials
 Often a reasonable approximation to a smooth function $f(x)$ near $x=x_0$ is:
 $$P_1(x)=f(x_0)+f'(x_0)(x-x_0)$$

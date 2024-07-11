@@ -1,4 +1,8 @@
-#math
+---
+tags: [math]
+Created: 2023-08-10T13:21:14+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The Fourier Transform ($\mathscr{F}$) allows us to extend the techniques used in [[Fourier Series]] representations of [[Functions]] to non-periodic signals.
 
 The Fourier transform of a function $x(t)$ is defined by:

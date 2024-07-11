@@ -1,4 +1,8 @@
-#cs #ee
+---
+tags: [cs, ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 An integrated circuit (IC) is a set of electronic [[Circuit|Circuits]] (typically) implemented on a single piece of semiconductor material, usually silicon. ICs comprise of hundreds to many thousands of [[Transistors]], [[Resistor|Resistors]] and [[Capacitor|Capacitors]]; all implemented on silicon. ICs are packaged and connections to the internal circuitry are exposed via pins.
 
 In general, the specific implementation of the IC is not important, but rather the function of the device and it interfaces with the rest of the circuit. Hence ICs can be treated as a functional black box. For digital ICs

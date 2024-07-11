@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The impedance $\mathbf{Z}$ of an [[Circuit Elements|Circuit Element]], measured in Ohms ($\ohm$), is its opposition to alternating current (AC). Impedance is represented as the sum of a real [[Resistance]] $R$ and imaginary reactance $X$.
 $$\mathbf{Z}=R+j\mathbf{X}$$
 Impedance $\mathbf{Z}$ is a complex number that captures the magnitude and phase change associated with a circuit element

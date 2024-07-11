@@ -1,4 +1,8 @@
-#networks 
+---
+tags: [networks]
+Created: 2023-10-08T14:43:38+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 IPv6 is the next generation of the [[Internet Protocol]]. It is a 128-bit addressing scheme that is designed to replace [[IPv4 Addressing|IPv4]]. 
 
 IPv6 is a major upgrade from IPv4 as it has:

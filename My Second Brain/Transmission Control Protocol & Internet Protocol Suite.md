@@ -1,7 +1,12 @@
 ---
-alias: TCP/IP
+aliases:
+  - TCP/IP
+tags:
+  - cs
+  - networks
+Created: 2023-07-22T21:51:57+10:00
+Modified: 2024-07-03T19:35:32+10:00
 ---
-#cs #networks
 Transmission Control Protocol / Internet Protocol Suite, commonly known as TCP/IP, is a framework for organising the set of communication protocols used in the Internet and similar [[Networks]] according to functional criteria. The foundational protocols in the suite are the [[Transmission Control Protocol]] (TCP), the [[User Datagram Protocol]] (UDP) and the [[Internet Protocol]] (IP). Early versions of this networking model were known as the Department of Defence (DoD) model because the research and development were funded by the United States Department of Defense through DARPA.
 
 # Architecture Model

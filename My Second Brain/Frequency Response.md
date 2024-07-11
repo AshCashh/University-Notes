@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In [[Signal Analysis]] and [[Electronics]], [[Frequency]] response is a measure of the [[Sinusoidal Signals#Magnitude ($V_m$)|Magnitude]] and [[Sinusoidal Signals#Phase ($ phi$)|Phase]] of a system as a function of [[Sinusoidal Signals#Angular Frequency ($ omega$)|Angular Frequency]] ($\omega$). 
 
 The frequency response is widely used in the design and analysis of systems, such as audio and control systems, where they simplify mathematical analysis by converting governing [[Differential Equations]] into algebraic equations. In audio systems, it may be used to minimise audible distortion by designing components (such as microphones, [[Operational Amplifiers]] and loudspeakers) so that the overall response is as flat as possible across the systems bandwidth. In control systems, such as a vehicle's cruise control, it may be used to assess systems stability, often through the use of [[Bode Plots]]. Systems with a specific frequency response can be designed using [[Analogue]] and [[Digital Filters]].

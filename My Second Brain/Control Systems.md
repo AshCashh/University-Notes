@@ -1,7 +1,12 @@
 ---
-alias: LTI System
+aliases:
+  - LTI System
+tags:
+  - ee
+  - math
+Created: 2023-08-29T22:53:01+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#ee #math
 A control system is a system in which a given initial state will always produce the same output. The system $H$ maps the input signal $x(t)$ to the output $y(t)$. 
 
 ## Linear Time-Invariant System
@@ -88,4 +93,5 @@ $$\int_{-\infty}^{\infty}|h(t)|\space dt <\infty$$
 #### Causality
 Causality means that the output at time $t$ does not depend on future values of the input signal. In terms of the impulse response, this means that $h(t)=0$ for $t<0$. 
 
-# Transfer Function
+# Week 11 EGB242
+]] 

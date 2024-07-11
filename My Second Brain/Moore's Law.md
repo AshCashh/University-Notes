@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-07-19T00:25:34+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Moore's law is the observation that the number of [[Transistors]] in an [[Integrated Circuits|Integrated Circuit]] doubles approximately every two years. The observation is named after Gordon Moore, the co-founder of Fairchild Semiconductor and Intel, who in 1965 posited a doubling every year in the number of components per IC and projected this rate of growth would continue for at least another decade. In 1975, he revised the forecast to doubling every two years. 
 
 ![[Pasted image 20230719003013.png]]

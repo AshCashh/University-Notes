@@ -1,7 +1,9 @@
 ---
 alias: NAT
+tags: [networks]
+Created: 2023-10-08T14:38:43+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#networks 
 Network address translation or NAT, translates a private [[Internet Protocol|IP]] address to a public IP address and visa versa. Private addresses are used within local networks and are not routable on the [[Internet, Intranet, Extranet|Internet]]. NAT enables private networks to communicate with the internet via converting private addresses to public addresses.
 
 NAT is used to conserve public IP addresses by allowing one public address to be used by a number of private addresses to access the internet.

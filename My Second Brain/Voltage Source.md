@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:26:06+10:00
+---
 A voltage source is a [[Circuit Elements|Circuit Element]] that produces or dissipates [[Power]] at a specified [[Voltage]] with whatever [[Current]] is required.
 - Indicated by a circle with the plus. 
 - Plus sign indicates which side is positive

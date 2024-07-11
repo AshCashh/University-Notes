@@ -1,5 +1,9 @@
-#cs
-In [[Computer Science]] and [[Mathematics]], unsigned integers (often called "uints") represent the set of counting (natural) numbers, starting at 0. In the decimal system (base-10), the unsigned integers are encoded using a sequence of decimal digits (0-9). 
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:32+10:00
+---
+In [[Computer Science]] and [[Mathematics]], unsigned integers (often called "uints") represent the set of counting (natural) numbers, starting at 0. In the decimal system (base-10), the unsigned integers are [[Encoding|Encoded]] using a sequence of decimal digits (0-9). 
 
 The decimal system is a positional numeral system, where the contribution of each digit is determined by its position. For example:
 $$278_{10} = 2\times10^2 + 7\times10^1 + 8\times10^0$$

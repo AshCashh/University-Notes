@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Pins can be used to connect internal peripheral functions to [[Hardware Peripherals]]. As [[Microprocessors & Microcontrollers|microcontrollers]] have more peripheral functions than avaliable pins, peripheral functions are typically multiplexed onto pins.
 
 Multiplexing is a method by which multiple peripheral functions are mapped to the same pin. In this scenario, only one function can be enabled at a time, and the pin cannot be used for GPIO.

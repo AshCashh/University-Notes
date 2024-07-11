@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-08-31T20:52:45+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+[[Mathematics]]
 # Change of Variables in $\mathbb{R}^2$ 
 Suppose we wish to change variables via
 $$\begin{align}

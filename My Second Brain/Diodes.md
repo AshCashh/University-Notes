@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The diode is a basic but very important [[Circuit Elements|Circuit Element]] that has two terminals, the anode and the cathode. Current flows in the direction of the arrow and, not against. The symbol for the diode is shown below,
 ![[Pasted image 20230311132502.png]]
 - When $v_d >$ forward voltage, the diode is forward biased, and therefore $i_d >$ 0

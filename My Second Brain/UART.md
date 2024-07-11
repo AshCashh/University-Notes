@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:27:53+10:00
+---
 UART or Universal Asynchronous Receiver-Transmitter is a simple and cost effective [[Serial Communication|Serial Communicating]] device. Instead, the sender and receiver must agree on a baud rate (the number of [[Binary|bits]] transmitted per second). This is typically in the range of 9600 baud to 115200 baud (with a 2Mbaud maximum).
 
 UART is a frame based protocol, where each frame is signalled by a start bit (always LOW), and is fixed length and format. UART can be used in both [[Serial Communication#Serial Communication Terminology|Full-duplex]] or [[Serial Communication#Serial Communication Terminology|Half-duplex]], depending on the hardware implementation, where the transmitter and reciever are full independent. This means either a 1- or 2-wire mode is possible (plus 1 for GND).

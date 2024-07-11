@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:27:58+10:00
+---
 In [[Computer Science]], the two's complement representation, the most significant [[Binary|bit]] encodes a negative weighting of $-2^{n-1}$. For example, in 8-bit sequences, index-7 represents a value of -128. The two's complement is calculated by adding 1 to the [[One's Complement]]. The range values are: $-2^{n-1}$ to $2^{n-1} - 1$ i.e. range of an 8-bit byte is: -128 to 127
 
 This representation is more efficient than the previous because 
@@ -15,4 +19,6 @@ $11111111=-2^7+2^6+2^5+2^4+2^3+2^2+2^1+2^0=-1$
 $11111101=-2^7+2^6+2^5+2^4+2^3+2^2+2^0=-3$
 $11111011=-2^7+2^6+2^5+2^4+2^3+2^1+2^0=-5$
 $10001100=-2^7+2^3+2^2=-116$
-$10000000=-2^7=-128
+
+$10010100 = -108$
+

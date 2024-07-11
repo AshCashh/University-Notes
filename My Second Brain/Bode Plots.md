@@ -1,9 +1,14 @@
-#ee
+---
+tags:
+  - ee
+Created: 2024-02-26T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In [[Electrical Engineering]], a Bode Plot is a graph of the [[Frequency Response]] of a system. In this plot, the [[Frequency]] (in Hz) is plotted on the horizontal axis using a logarithmic scale.
 ![[Pasted image 20230509221902.png|centre|300]]
 ## Decibels
 Unit of gain for [[Transfer Function]] are in decibels (dB).
-$$Gain(dB)  = 20log_{10}|H|$$
+$$\text{Gain(dB)}  = 20log_{10}|H|$$
 ## 3dB Point
 The frequency $f$ at which the transfer function equals:
 $$\mathbf{H}(\omega)=\cfrac{1}{1+j}=\cfrac{1}{\sqrt{2}}\angle-45\degree$$
@@ -21,7 +26,7 @@ $$Gain(dB)=20log_{10}(Gain)$$
 Transfer to Phase:
 $$Phase = \angle\mathbf{H}(\omega)$$
  $$=tan^{-1}\cfrac{\Im\{\mathbf{H}(\omega)\}}{\Re\{\mathbf{H}(\omega)\}}$$
-##### Bode Plot High Pass Filter Example
+##### Bode Plot First Order High Pass Filter Example
 Find $v_a(\omega)$ leaving $\omega$ as a variable.
 ![[Pasted image 20230509222025.png|300]]
 $$v_a(\omega)=v_s(\omega)\times\cfrac{R}{R+\cfrac{1}{j\omega C}}$$
@@ -29,7 +34,7 @@ Simplify
 $$=v_s(\omega)\times\cfrac{Rj\omega}{Rj\omega+\cfrac{1}{C}}$$
 Divide by R
 $$v_s(\omega)\times\cfrac{j\omega}{j\omega+\cfrac{1}{RC}}$$
-Subtitude RC: 
+Sub RC: 
 $$v_s(\omega)\times\cfrac{j\omega}{j\omega+100}$$
 Apply Transfer function formula: $output=input\times H(\omega)$
 $$\therefore\mathbf{H}(\omega)=\cfrac{j\omega}{j\omega+100}$$

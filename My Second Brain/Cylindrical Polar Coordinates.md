@@ -1,4 +1,10 @@
-#math
+---
+tags:
+  - math
+Created: 2023-09-07T17:41:25+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+[[Mathematics]]
 # Cylindrical Polar Coordinates in 2D
 The cylindrical polar or just polar coordinate system $(r,\theta)$ is defined by:
 $$x=r\cos\theta\qquad y=r\sin\theta$$

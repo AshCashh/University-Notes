@@ -1,7 +1,12 @@
 ---
-alias: Subnet
+aliases:
+  - Subnet
+tags:
+  - cs
+  - networks
+Created: 2023-08-10T20:42:43+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks 
 Subnetting is splitting up a [[Networks|Network]] address range into a group of smaller networks. The end result is multiple smaller sub-networks. For example, you could use `172.31.0.0/24`,  `172.31.1.0/24` and so forth up to `172.31.255.0/24`
 
 There are two approaches to subnetting an [[Internet Protocol|IP]] address. Fixed length subnet mask (FLSM) and variable length subnet mask ([[Subnetting#VLSM|VLSM]]). In FLSM subnetting, all subnets are of equal size with an equal number of hosts identifiers/addresses. This method tends to be the most wasteful because it uses more IP addresses than necessary.

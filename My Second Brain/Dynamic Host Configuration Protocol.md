@@ -1,7 +1,9 @@
 ---
 alias: DHCP
+tags: [networks]
+Created: 2023-09-02T13:51:32+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#networks
 Dynamic Host Configuration Protocol (DHCP) is used to automatically assign IP addresses as needed within a network. 
 - When a computer is turned it, it will request an address from a DHCP server that is configured as a DHCP server with a block of available IP addresses
 - The DHCP server assigns an address to the computer for a specific amount of time (called a lease)

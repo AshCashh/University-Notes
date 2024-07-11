@@ -1,4 +1,8 @@
-#cs 
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A state machine or finite state machine (FSM) is a [[Mathematics|Mathematical]] model of computation in which a machine can only exist in one of a finite number of states. The machine transitions between states in response to inputs, and can perform actions during transitions.
 
 A state machine is fully defined by its list of states, initial state, and the conditions for transitioning between states and often used in [[Computer Science]] programming languages.

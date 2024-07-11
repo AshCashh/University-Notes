@@ -1,4 +1,9 @@
-#cs #os
+---
+tags:
+  - os
+Created: 2023-09-11T12:34:15+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 CPU scheduling is the basis of multiprogrammed [[Operating Systems]]. By switching the CPU among [[Process|Processes]], the OS can make the computer more productive. 
 # Basic Concepts
 In a system with a single CPU core, only one process can run at a time. The objective of multiprogramming is to have some process running at all times, to maximise CPU utilisation. 

@@ -1,4 +1,8 @@
-#cs #networks
+---
+tags: [cs, networks]
+Created: 2023-07-28T17:44:06+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Ethernet is a family of wired computer networking technologies commonly used in [[LAN, WAN, MAN]]. It was introduced in 1980 and standardised in 1983 as IEEE 802.3. The protocol has evolved and improved over time to transfer data. The system now has three main speeds: 10Mbps, 100Mbps and 1Gbps. 
 
 Although there are many variations of Ethernet, all forms are similar in their basic operation and frame formatting. What differs in variations are the cabling, speed of transmission and method by which bits are encoded on the medium. Because frame formatting are the same, Ethernet variations are therefore compatible with on another. Hence why [[Network Interface Card]] and switches are described as 10/100 or 10/100/1000 devices. These devices can support multiple Ethernet speeds.

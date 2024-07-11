@@ -1,12 +1,21 @@
+---
+Created: 2023-06-30T19:37:47+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 # Desktop Management
 
-| Command | Syntax            | Description                                |
-|---------|-------------------|--------------------------------------------|
-| [save](https://au.mathworks.com/help/matlab/ref/save.html)    | save data.mat     | Save your current workspace to a MAT file   |
-| [load](https://au.mathworks.com/help/matlab/ref/load.html)    | load data.mat     | Load the variables in a MAT file to the workspace |
-| [clear](https://au.mathworks.com/help/matlab/ref/clear.html)   | clear             | Clear all variables from the workspace     |
-| [clc](https://au.mathworks.com/help/matlab/ref/clc.html)     | clc               | Clear all text from the command window      |
-| [format](https://au.mathworks.com/help/matlab/ref/format.html)  | format long       | Change how numeric output is displayed      |
+
+| s   | s   |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+
+| Command                                                        | Syntax        | Description                                       |
+| -------------------------------------------------------------- | ------------- | ------------------------------------------------- |
+| [save](https://au.mathworks.com/help/matlab/ref/save.html)     | save data.mat | Save your current workspace to a MAT file         |
+| [load](https://au.mathworks.com/help/matlab/ref/load.html)     | load data.mat | Load the variables in a MAT file to the workspace |
+| [clear](https://au.mathworks.com/help/matlab/ref/clear.html)   | clear         | Clear all variables from the workspace            |
+| [clc](https://au.mathworks.com/help/matlab/ref/clc.html)       | clc           | Clear all text from the command window            |
+| [format](https://au.mathworks.com/help/matlab/ref/format.html) | format long   | Change how numeric output is displayed            |
 Note: Loading and Saving also works for individual variables
 
 # Built-in Functions & Constants 

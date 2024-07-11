@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Power (p) is the rate of change of [[Energy]] over time, measured in Watts (W) or joules per second. 
 $$p=\frac{dw}{dt}=1W=1\frac{J}{s}$$
 Electric power is the product of [[Voltage]] and [[Current]] and can be determined through the equation:

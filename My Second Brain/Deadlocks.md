@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-09-14T22:28:24+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In a multiprogramming environment, several [[Process|Processes]] may complete for a finite number of resources. A process requests resources; if the resources are not available at that time, the process enters a waiting state. Sometimes, a waiting process can never again change state, because the resources it has requested are held by other waiting processes. This situation is called a deadlock.
 # System Model
 A system consists of a finite number of resources to be distributed among a number of completing processes. Resources can consist of CPU cycles, memory space, [[Input & Output|I/O]] devices. But also [[Process Synchronisation|Synchronisation]] tools like [[Mutex Locks & Semaphores|Mutex Locks]], and [[Mutex Locks & Semaphores|Semaphores]]. A process must request a resource before using it and must release the resource after using it. Under the normal mode of operation, a process may utilise a resource in only the following sequence:

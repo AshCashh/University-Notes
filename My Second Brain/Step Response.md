@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:34:53+10:00
+---
 Step response also known as a forced response, is where the [[Circuit Elements|Circuit Element]] is driven by a [[Voltage Source]] or [[Current Source]]
 ![[Pasted image 20230416203651.png]]
 

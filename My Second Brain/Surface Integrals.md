@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-09-14T18:08:22+10:00
+Modified: 2024-07-03T19:34:13+10:00
+---
+[[Mathematics]]
 Let $S$ be a smooth surface defined by the function $z=f(x,y)$.
 Let $g(x,y,z)$ be a function that is continuous on $S$.
 

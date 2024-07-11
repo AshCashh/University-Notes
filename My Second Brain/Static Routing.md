@@ -1,4 +1,8 @@
-#cs #networks 
+---
+tags: [cs, networks]
+Created: 2023-08-20T10:58:50+10:00
+Modified: 2024-07-03T19:35:01+10:00
+---
 Static routing is when a network administrator, with knowledge of the network topology, manually builds and updates the routing table. This is an effective method for configuring and managing a routing table for small and predicable networks. However, it does not scale well for large or dynamically changing networks.
 
 ![[Pasted image 20230820104112.png]]

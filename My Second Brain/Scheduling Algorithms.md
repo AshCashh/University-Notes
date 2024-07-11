@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-09-11T13:04:15+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 [[CPU Scheduling]] deals with the problem of deciding which of the [[Process|Processes]] in the ready queue is to be allocated the CPU's core. There are many different CPU scheduling algorithms, although most modern CPU architectures have multiple processing cores, these are described in the context of only one processing core.
 
 # First-Come, First-Served Scheduling

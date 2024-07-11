@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 An amplifier is a device for increasing the [[Power]] of a signal through an external energy source. In an electronic amplifier, the "signal" is usually a [[Voltage]] or [[Current]]
 ![[Pasted image 20230423193952.png]]
 
@@ -21,6 +25,14 @@ $v_p$ is equal to $v_n$ so leave $v_o$ as it is
 
 ## Op Amp Analysis
 ![[Pasted image 20230423204332.png]]
+Low-pass inverting active:
+$\cfrac{v_{out}}{v_{in}}=-\cfrac{R_2}{R_1}\left(\cfrac{\cfrac{1}{R_1C}}{s+\cfrac{1}{R_1C}}\right)$
+![[Pasted image 20240513113905.png|400]]
+Connect + to reference voltage
+1000p
+R100k
+R1: 3.3k
+
 ##### Inverting Amplifier
 ![[Pasted image 20230423200154.png]]
 Suppose circuit is in steady state with input and output at 0V.
@@ -55,8 +67,8 @@ $$\cfrac{v_{in}}{R_1}+\cfrac{v_{out}}{R_2}=0$$
 Rearrange for $v_{out}$
 $$v_{out}=-\cfrac{v_{in}R_2}{R_1}$$
 This is an inverting amplifier
-The gain of the amplifier is $-R_2/R_1$
-
+The gain of the amplifier is:
+$$G=\cfrac{V_{out}}{V_{in}}=-\cfrac{R_2}{R_1}$$
 ##### Voltage Follower / Voltage Buffer
 Use the golden rules to work out what this circuit does
 ![[Pasted image 20230423202812.png]]

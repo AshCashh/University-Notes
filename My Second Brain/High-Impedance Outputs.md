@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In many instances, a [[Digital Outputs|Digital Output]] is required to be placed in a [[Impedance#High Impedance|High-Impedance]] (HiZ) state. This is accomplished by using an output enable (OE) signal.
 
 - When the OE signal is HIGH, the output state Y is determined by the output driver $A$.

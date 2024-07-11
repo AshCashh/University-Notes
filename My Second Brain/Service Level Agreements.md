@@ -1,4 +1,8 @@
-#networks
+---
+tags: [networks]
+Created: 2023-09-16T18:38:52+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A service-level agreement is a contract or commitment between a service provider and a customer that defines the services that will be provided to that customer, as well as the service levels that the provider will maintain. Particular aspects of the service include: quality, availability, responsibilities are agreed upon.
 
 An SLA should contain the following:

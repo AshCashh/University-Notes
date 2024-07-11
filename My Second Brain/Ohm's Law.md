@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Ohm's Law states that both [[Current]] and [[Resistance]] are proporitional to [[Voltage]].
 $$ V = iR $$
 More specifically, Ohm's law states that resistance in this relation is constant, independent of the current. Ohm's law is an empirical relation which accurately describes the conductivity of the vast majority of [[Circuit Elements]] over many orders of magnitude of current. However, some materials do not obey Ohm's law; these are called non-ohmic.

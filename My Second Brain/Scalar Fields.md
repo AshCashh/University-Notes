@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-08-24T14:56:41+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+[[Mathematics]]
 A scalar field is a function:
 $$f:\mathbb{R}^n\to\mathbb{R}$$
 For $n=2$. $f=f(x,y)$.

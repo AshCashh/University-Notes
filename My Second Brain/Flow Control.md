@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Flow control is a mechanism [[Network Communication#Software Component|Network Protocols]] use to prevent a destination device from becoming overwhelmed by data from a transmitting computer, resulting in dropped packets. 
 
 [[Instructions]] on the AVR Core increment the PC by 1 or 2 (depending on whether the OPCODE is 1 or 2 words) when they are executed so that any successive instructions are executed after the first. To divert execution to a different location, we can utilise change of flow instructions.

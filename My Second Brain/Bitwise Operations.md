@@ -1,4 +1,9 @@
-#cs
+---
+tags:
+  - cs
+Created: 2023-07-06T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 When applying [[Logical Operators]] to a sequence of [[Binary|bits]], the operation is performed in a bitwise manner. The result of each operation is stored in the corresponding bit index also.
 
 ## Bit Manipulation

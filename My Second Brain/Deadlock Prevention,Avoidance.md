@@ -1,4 +1,8 @@
-#os #cs
+---
+tags: [os, cs]
+Created: 2023-09-17T17:23:41+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 # [[Deadlocks|Deadlock]] Prevention
 **Mutual Exclusion**:
 The mutual exclusion condition must hold. That is, at least one resource must be non-sharable. Sharable resources do not require mutually exclusive access and thus cannot be involved in a deadlock. Read-only files are a good example of sharable resources.

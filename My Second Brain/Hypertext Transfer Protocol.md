@@ -1,8 +1,10 @@
 ---
 alias: HTTP
+tags: [networks]
+Created: 2023-09-01T17:12:14+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#networks 
-Hypertext Transfer Protocol (HTTP) is the protocol Web Browsers use to access data on the World Wide Web. Originally, its main purpose was simply to transfer static Web pages written in HTML. Now HTTP is also used for general file transfer, downloading and displaying multimedia files and delivering scripts for animated and interactive Web pages.
+Hypertext Transfer Protocol (HTTP) is the protocol Web Browsers use to access data on the [[World Wide Web]]. Originally, its main purpose was simply to transfer static Web pages written in [[HTML]]. Now HTTP is also used for general file transfer, downloading and displaying multimedia files and delivering scripts for animated and interactive Web pages.
 
 Because it's often used to transfer large amounts of data over the [[Internet, Intranet, Extranet|Internet]], it uses [[Transmission Control Protocol|TCP]] as its Transport-layer protocol and the default TCP port number is `80`. HTTP identifies and locates network resources by a Uniform Resource Locator (URL).
 
@@ -43,4 +45,21 @@ Every object on the internet has a unique Uniform Resource Locator (URL). All UR
 - Host or domain name
 - Directory or subdirectory information
 - File name
+
+## Elements of HTTP Session
+A HTTP session generally consists of three main phases:
+1. The client establishes a TCP connection with the server
+2. The client then sends to the server and waits for a response back
+3. Finally the client receives a response from the server containing information about the server request and if successful the data that was requested
+
+A server response will always contain a response code, some of these are important to know. Here is a small list of some important codes:
+
+| Code | Definition            |
+| ---- | --------------------- |
+| 200  | OK                    |
+| 400  | Bad Request           |
+| 401  | Unauthorised          |
+| 403  | Forbidden             |
+| 404  | Not Found             |
+| 500  | Internet Server Error |
 

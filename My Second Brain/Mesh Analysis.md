@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 ### Definitions
 **Node:** A point where two or more [[Circuit Elements]] join
 **Essential Node:** A point where three or more circuit elements join

@@ -1,7 +1,9 @@
 ---
 alias: NIC
+tags: [cs, networks]
+Created: 2023-07-28T17:08:04+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks
 A Network Interface Card (NIC) is an add-on card plugged into a motherboard expansion slot that provides a connection between the computer and the network medium. Network cards can either be wired or [[Wireless]].
 
 Although NICs are typically built into the motherboard, they can come as separate adapter cards that slide into one of the motherboard expansion slots.

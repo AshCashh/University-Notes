@@ -1,7 +1,11 @@
 ---
-alias: CIDR
+aliases:
+  - CIDR
+tags:
+  - networks
+Created: 2023-08-19T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks 
 Classless Interdomain Routing (CIDR) is a method of assigning [[Internet Protocol|IP]] addresses that improves the efficiency of address distribution and replaces the previous [[IPv4 Addressing#IP Address Classes|Class]] based system on [[Networks]]. 
 
 The initial goal of CIDR was to slow the increase of routing tables on [[Routers & Routing|Routers]] across the internet and decrease the rapid exhaustion of [[IPv4 Addressing|IPv4 Addresses]]. As a result, the number of available internet addresses has greatly increased.

@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-09-10T19:19:24+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 When signals are neither periodic nor [[Sinusoidal Signals|Sinusoidal]], the [[Fourier Transform]] cannot be used. Any sudden change in a single is regarded as a transient which disturbs the steady-state operation of a system. The Laplace transform is a generalisation of the Fourier transform used to determine the response of a system under both transient and steady-state conditions.
 
 The two-sided Laplace transform of a function $f(t)$ is given by:

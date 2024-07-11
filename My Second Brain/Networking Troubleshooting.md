@@ -1,4 +1,8 @@
-#cs #networks 
+---
+tags: [cs, networks]
+Created: 2023-08-27T11:24:09+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The daunting task of supporting a complex internetwork can be both challenging and rewarding. Successful network administrators need to draw on a variety of skills, technologies and techniques to meet the increasing demands of [[LAN, WAN, MAN|LANs]] and [[Networks]]. 
 
 There are many approaches to troubleshooting and different situations call for different approaches. 

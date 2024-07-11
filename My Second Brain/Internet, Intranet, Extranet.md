@@ -1,9 +1,11 @@
 ---
 alias: Internet, Intranet, Extranet
+tags: [cs, networks]
+Created: 2023-07-22T22:02:07+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks
 # Internet
-The Internet (or internet) is the global system of interconnected computer [[Networks]] that uses the [[Transmission Control Protocol & Internet Protocol Suite]] (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business and government networks of local to global scope, linked by a broad array of electronic, wireless and optical networking technologies. The Internet carries a vast range of information resources and services such as the interlinked hypertext documents and applications of the World Wide Web (WWW), electronic mail, telephony and file sharing.
+The Internet (or internet) is the global system of interconnected computer [[Networks]] that uses the [[Transmission Control Protocol & Internet Protocol Suite]] (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business and government networks of local to global scope, linked by a broad array of electronic, wireless and optical networking technologies. The Internet carries a vast range of information resources and services such as the interlinked hypertext documents and applications of the [[World Wide Web]] (WWW), electronic mail, telephony and file sharing.
 
 # Intranet 
 An intranet is a computer network for sharing information, easier communication, collaboration tools, operational system, and other computing services with an organisation, usually to the exclusion of access by outsiders. The term is used in contrast to public networks (Internet) but uses the same technology based on the TCP/IP.

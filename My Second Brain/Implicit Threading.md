@@ -1,4 +1,8 @@
-#cs #cs
+---
+tags: [cs]
+Created: 2023-08-15T18:04:37+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 One way to address the difficulties and better support the design of [[Multithreading Models|Multithreading]] applications is to transfer the creation and management of [[Threads|Threading]] from application developers to compilers and run-time libraries. This strategy, termed implicit threading, is an increasingly popular trends.
 
 # Thread Pools

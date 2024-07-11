@@ -1,7 +1,9 @@
 ---
 alias: LAN, WANs, MANs
+tags: [cs, networks]
+Created: 2023-07-22T22:18:16+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks
 # Local Area Network (LAN)
 A [[Networks|Network]] that interconnects devices within a limited geographic area, e.g. university, campus, office.
 # Wide Area Networks (WANs)

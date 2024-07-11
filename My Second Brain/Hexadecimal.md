@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 ## Hexadecimal Representation
 In [[Mathematics]] and [[Computer Science]], the hexadecimal numerical system (hex) is a base-16 system. As we need 16 digits in the system, we use the letters A to F to represent digits 10 to 16.
 

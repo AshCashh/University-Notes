@@ -1,7 +1,9 @@
 ---
 alias: Router, Routers, Routing
+tags: [networks, cs]
+Created: 2023-08-19T09:26:25+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks 
 Routers operate at the [[Open System Interconnection#Network Layer|Network Layer]] and are responsible for connecting separate logical [[Networks]] via data packets to form an internetwork, known as routing.
 ![[Pasted image 20230819093102.png|centre|400]]
 Routing is one of the fundamental features of the [[Internet, Intranet, Extranet|Internet]] because it enables packets to pass from one device to another and reach its final destination. The routing process involves selecting the best route to reach such destination.

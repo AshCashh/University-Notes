@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 SPI or Serial Peripheral Interface is a synchronous [[Serial Communication]] protocol where the bitrate is defined by the SPI clock speed ranging from 10MHz to 20MHz. SPI is typically used for high-speed, inter-IC communications (communication with other peripherals) over short distances. SPI is alos [[Serial Communication#Serial Communication Terminology|Full-duplex]], and can be configured to use a 2-, 3-, 4-wire modes (plus 1 for GND). It can be used to communicate with multiple devices simulaneously, using chip select (CS or slave select) lines to select the device to communicate with. Typically in a master slave model, the master device controls the clock.
 
 The SPI peripheral can be used to interface to devices that produce or consume a serial bit stream, clocked or otherwise. The clock phase and polarity can also be modified to suit the device being interfaced to. It is also possible to have multiple masters on the same bus, but this requires a careful mechanism to arbitrate access to the bus.

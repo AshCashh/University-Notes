@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In digital circuits, a logic level is one of a finite number of states that a digital signal can inhabit. For digital input/output (IO), conventionally:
 - The [[Voltage]] level of the positive power supply represents a logical 1, or the high state
 - 0 V (ground) represents a logical 0, or the low state.

@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-08-24T17:41:40+10:00
+Modified: 2024-07-03T19:26:57+10:00
+---
+[[Mathematics]]
 A vector field is a function:
 $$\mathbf{F}:\mathbb{R}^n\to\mathbb{R}^n$$
 For $n=2$, $\mathbf{F}=F_1(x,y)i+F_2(x,y)j$:

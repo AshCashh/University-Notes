@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:34:18+10:00
+---
 [[Thevenin Equivalent|Thevenin's Theorem]]: Any linear circuit can be replaced by a [[Voltage Source]] and a [[Resistor#Resistors in Series|resistor in series]].
 
 [[Norton Equivalent Circuits|Norton's Theorem]]: Any linear circuit can be replaced by a [[Current Source]] and a [[Resistor#Resistors in Parallel|resistor in parallel]].

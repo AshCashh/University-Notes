@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-09-14T16:14:45+10:00
+Modified: 2024-07-03T19:24:55+10:00
+---
+[[Mathematics]]
 Let $C$ be a curve with parameterisation $\mathbf{r}(t)=x(t)\mathbf{i}+y(t)\mathbf{j}+ z(t)\mathbf{k}$ with endpoints at $\mathbf{r}_0=\mathbf{r}(a)$ and $\mathbf{r}_\mathbf{r}(b)$.
 Let $\mathbf{F}=F_1\mathbf{i}+F_2\mathbf{j}+F_3\mathbf{k}$ be a [[Scalar Fields|Scalar Field]].
 

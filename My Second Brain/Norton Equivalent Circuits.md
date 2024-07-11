@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Similar to the [[Thevenin Equivalent]] model, we can use a [[Current Source]] with a [[Resistor#Resistors in Parallel|Resistor in parallel]] to model the same circuit.
 ![[Pasted image 20230323155426.png|centre|300]]
 This circuit has the following properties:

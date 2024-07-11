@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A Light-Emitting [[Diodes|Diode]] (LED) is a semiconductor device that emits light when [[Current]] flows through it. 
 
 ## Driving LEDs

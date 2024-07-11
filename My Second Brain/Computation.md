@@ -1,4 +1,9 @@
-#cs
+---
+tags:
+  - cs
+Created: Invalid date
+Modified: 2024-07-03T19:35:33+10:00
+---
 A computation is any type of arithmetic or non-arithmetic calculation that is well-defined. Common examples of computations are [[Mathematics|Mathematical Equations]] and computer [[Algorithm|Algorithms]].
 
 Mechanical or electronic devices (or, historically, people) that perform computations are known as computers. The study of computation is the field of computability, itself a sub-field of [[Computer Science]].

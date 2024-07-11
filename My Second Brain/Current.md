@@ -1,5 +1,10 @@
-#ee
-Current (i) is the rate of flow of electrical [[Charge]] through a [[Circuit]] / the amount of electrcity flowing through a circuit, measured in Amperes (A).
+---
+tags:
+  - ee
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+Current (i) is the rate of flow of electrical [[Charge]] through a [[Circuit]] / the amount of electricity flowing through a circuit, measured in Amperes or Amps(A).
 - Current is measured through a [[Circuit Elements|Circuit Element]].
 - Amps are Coulombs per second
 - The larger the value in amperes, the more [[Electricity]] is flowing in the circuit.

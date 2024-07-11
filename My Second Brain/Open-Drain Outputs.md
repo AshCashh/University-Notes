@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Multiple [[Push-Pull Outputs]] should never be connected to the same net as when one output is driven HIGH and another is driven LOW, and effective [[Short Circuit]] is created and one or more devices may be damaged. While push-pull outputs with an output enable may be used, the timing must be carefully managed.
 
 Hence a more robust solution is to use open-drain outputs

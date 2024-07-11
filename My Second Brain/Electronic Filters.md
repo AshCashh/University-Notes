@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Electronic filters are a type of [[Signal Analysis|Signal Processing]] filter in the form of electronic [[Circuit|Circuits]] designed to allow certain ranges of [[Frequency|Frequencies]] to pass, while other ranges of frequencies are stopped.
 
 ## Ideal Filters

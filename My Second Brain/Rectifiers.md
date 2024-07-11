@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A Rectifier is a [[Circuit]] that converts a [[Sinusoidal Signals|Sinusoidal Signal]] (AC) into a single-directional direct current (DC).
 
 By using a [[Diodes|Diode]], a rectifier only allows [[Current]] to pass when an AC [[Voltage]] is positive, i.e. the diode donducts on the positive half cycle.

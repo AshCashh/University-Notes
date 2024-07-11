@@ -1,4 +1,8 @@
-#os
+---
+tags: [os]
+Created: 2023-08-23T08:37:46+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 # Pthreads
 Pthreads refers to the POSIX standard (IEEE 1003.1c) API for thread creation and synchronisation, which may be provided as either a user-level or kernel-level library. This is a specification for thread behaviour not a implementation. It is commonly implemented in UNIX type systems, including Linux and macOS.
 ```c

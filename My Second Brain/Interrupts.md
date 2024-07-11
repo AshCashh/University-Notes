@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-07-25T20:58:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 An interrupt is a signal sent to the processor to indicate that it should interrupt the current code that is being executed to execute a function called an **interrupt service routine** (or interrupt handler). Rather than polling for individual events (such as button presses), interrupts allow the processor to be notified when an event occurs.
 
 Summarised Interrupts are used by hardware/peripherals to let the CPU know something has happened. They are commonly used in [[Microprocessors & Microcontrollers]].

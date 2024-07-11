@@ -1,4 +1,8 @@
-#math
+---
+tags: [math]
+Created: 2023-06-29T20:19:58+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A linear second-order [[Differential Equations|Differential Equation]] is a [[Mathematics|Mathematical]] equation of the form:
 $$a_2(x)y^"+a_1(x)y'+a_0(x)y=F(x)$$
 - If $F(x)=0$, then the equation is [[Differential Equations#Homogeneity|Homogeneous]].

@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-09-07T20:19:20+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
+[[Mathematics]]
 The spherical coordinate system $(r,\phi,\theta)$ is defined by the change of variables:
 $$
 x=r\cos\theta\sin\phi,\qquad y=r\sin\theta\sin\phi,\qquad z=r\cos\phi

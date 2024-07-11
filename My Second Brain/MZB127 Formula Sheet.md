@@ -1,3 +1,7 @@
+---
+Created: 2023-06-27T20:35:53+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
  ### Integration By Parts
 $$\int uv'\space dx=uv-\int vu'\space dx  $$
 

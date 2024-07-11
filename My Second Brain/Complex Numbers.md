@@ -1,4 +1,9 @@
-#math
+---
+tags:
+  - math
+Created: 2023-08-21T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 In [[Mathematics]], a complex number is an element of a number system that extends the real numbers with a specific element denoted $i$, called the imaginary unit.
 ![[Pasted image 20230802191336.png|centre|300]]
 

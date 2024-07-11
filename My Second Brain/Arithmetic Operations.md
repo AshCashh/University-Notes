@@ -1,4 +1,9 @@
-#cs
+---
+tags:
+  - cs
+Created: 2023-06-29T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Addition is performed using the same process as decimal addition except we only use two digits, 0 and 1.
 - 0b0 + 0b0 = 0b0
 - 0b0 + 0b1 = 0b1

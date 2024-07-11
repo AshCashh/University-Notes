@@ -1,9 +1,13 @@
 ---
-alias: ADC
+aliases:
+  - ADC
+tags:
+  - ee
+  - cs
+Created: 2024-03-01T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs
-## Analogue to Digital Conversion
-Analogue signals or [[Sinusoidal Signals]] to digital signals conversion (ADC) is a technique used to convert an analogue signal to a digital signal. The analogue signal is sampled at a regular interval and the sampled value is converted to a digital value. Digital quantities are both discrete in amplitude and time. 
+Analogue signals or [[Sinusoidal Signals]] to digital signals conversion (ADC) is an [[Encoding]] technique used to convert an analogue signal to a digital signal. The analogue signal is sampled at a regular interval and the sampled value is converted to a digital value. Digital quantities are both discrete in amplitude and time. 
 
 Specialised hardware called an analogue to digital converter performs this function. An ADC takes a sample of a continuous signal at an instant in time, if the signal is time-varying it takes multiple samples. The quality of the conversion depends on a number of factors, such as resolution and sample rate.
 
@@ -149,3 +153,6 @@ int main(void){
 As ADC conversions take time, we will often want to set up hardware to take care of the sampling process for us, this will free up the CPU to perform other computations. To start a conversion we can set up the ADC to use events e.g. setup a timer to trigger the ADC to start a conversion at regular intervals
 
 Similarly, we can set up interrupts that are triggered when a conversion is complete and a result is ready to be read from the ADC result register.
+
+# Improving ADC Accuracy
+Increase the sampling rate and/or increase the number of quantisation levels.

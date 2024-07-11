@@ -1,7 +1,9 @@
 ---
 alias: OSI
+tags: [cs, networks]
+Created: 2023-07-25T10:53:06+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks
 The Open Systems Interconnection Model (OSI Model) is a conceptual model from the International Organisation for Standardisation (ISO) that provides a common framework for developers and students of [[Networks|Networking]] to work with and learn from. It is not specific to any protocol suite and can be applied to most networking protocols. It's also well known and acknowledged as the baseline for categorisation of [[Network Communication]] functions. 
 # Structure of the OSI Model
 The structure consists of a seven layers organisation of how data travels from place to place on any given network. Each layer provides services to the next higher layer until it reaches the application layer.

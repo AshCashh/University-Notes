@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A resistor is a [[Circuit Elements|Circuit Element]] that dissipates [[Power]] with a specified ratio between [[Voltage]] and [[Current]], known as [[Resistance]].
 ![[Pasted image 20230305202642.png|100]]
 Ratio of voltage to current is constant: $\cfrac{v}{i}=constant$

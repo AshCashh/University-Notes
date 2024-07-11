@@ -1,7 +1,9 @@
 ---
 alias: IP
+tags: [cs, networks]
+Created: 2023-08-03T15:29:46+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks
 An Internet Protocol or IP address is assigned to every computer and network device using [[Transmission Control Protocol & Internet Protocol Suite|TCP/IP]] for communication. IP addresses are used for two main reasons:
 - To identify a network device at the Internetwork layer
 - To identify the network on which a device resides

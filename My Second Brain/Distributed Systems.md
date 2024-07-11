@@ -1,4 +1,8 @@
-#os
+---
+tags: [os]
+Created: 2023-09-03T21:07:14+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A distributed system is a collection of loosely coupled processors interconnected by a [[Network Communication|Communications Network]]. A distributed system can also be thought of as a collection of physically separate, possibly heterogeneous, [[Computer System|Computer Systems]] that are [[Networks|Networked]] to provide users with access to the various resources that the system maintains.
 ![[Pasted image 20230903211136.png|centre|400]]
 Processors variously called nodes, computers, machines, hosts:

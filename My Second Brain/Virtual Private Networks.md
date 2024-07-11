@@ -1,4 +1,8 @@
-#networks
+---
+tags: [networks]
+Created: 2023-09-16T17:09:18+10:00
+Modified: 2024-07-03T19:26:45+10:00
+---
 A VPN is a private network that uses a public network (usually the internet) to connect remote sites or users together. VPNs are used to provide secure remote access to a private network.
 ### Benefits
 - Allow mobile users to connect with corporate networks securely
@@ -6,7 +10,7 @@ A VPN is a private network that uses a public network (usually the internet) to 
 - Reduce costs by using the ISP's support services instead of paying for more expensive leased line support
 ### Common VPNs:
 - IPSec $\to$ Network layer
-- Transport Layer Security (TSL)/ Secure Sockets Layer (SSL) $\to$ Transport Layer
+- [[Transport Layer Security]] (TSL)/ Secure Sockets Layer (SSL) $\to$ Transport Layer
 ### VPN Communicate Model:
 - **Site-to-Site VPN**: A VPN that connects two or more remote sites together
 - **Client-to-Site VPN**: A VPN that connects a remote user to a remote site

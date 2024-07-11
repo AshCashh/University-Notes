@@ -1,4 +1,9 @@
-#cs #networks
+---
+tags:
+  - networks
+Created: 2023-07-28T14:37:02+10:00
+Modified: 2024-07-03T19:25:12+10:00
+---
 A wireless network is a [[Computer System]] [[Networks|Network]] that uses wireless data connections between network nodes.
 
 ## Wireless Benefits

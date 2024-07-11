@@ -1,7 +1,11 @@
 ---
-alias: ARP
+aliases:
+  - ARP
+tags:
+  - networks
+Created: 2023-09-08T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #networks 
 Address Resolution Protocol (ARP) is used to resolve a logical ([[Internet Protocol|IP]]) address to a physical (MAC) address for local [[LAN, WAN, MAN|LAN]] communication. It operates at both the Network and Data Link layer of the [[Open System Interconnection|OSI]]. 
 
 When a packet is ready to be sent to the Network access layer, the destination device's MAC address must be retrieved before the frame header can be constructed. The source device needs to obtain the MAC address of the destination device to deliver data.

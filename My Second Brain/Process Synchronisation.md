@@ -1,14 +1,16 @@
 ---
 alias: Synchronisation
+tags: [cs, os]
+Created: 2023-08-20T18:40:12+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #os 
 Since, [[Process|Processes]] can execute concurrently via [[Process Scheduling]], quite often processes may be interrupted and only partially complete execution before another process is scheduled. Here, we will explain how concurrent access to shared data may result in [[Problems of Synchronisation]], and how ensuring the orderly execution of cooperating processes resolves such issues.
 
 To illustrate the problem, suppose we wanted to provide a solution to the [[Inter-Process Communication#IPC in Shared-Memory Systems|Consumer-Producer Problem]] that fills all the buffers. We can do so by having an integer `counter` that keeps track of the number of full buffers. Initially the `counter` is 0 and is incremented by the producer after a new buffer and decremented by the consumer after it consumes a buffer.
 
 |          Producer          | Consumer |
 |:--------------------------:|:--------:|
-| ![[Code Snippets#^ProducerProcess]] | ![[Code Snippets#^ConsumerProcess]]         |
+| ![[C Code Snippets#^ProducerProcess]] | ![[C Code Snippets#^ConsumerProcess]]         |
 
 Although the producer and consumer routines shown above are correct separately, they may not function as expected when executed concurrently:
 ![[Pasted image 20230820222649.png]]
@@ -48,7 +50,20 @@ The variable `turn` indicates whose turn it is enter its critical section. The f
 
 |Process 1           | Process 2           |
 | :-------------------: | :-------------------: |
-| ![[Code Snippets#^Process1]] | ![[Code Snippets#^Process2]] |
+| ![[C Code Snippets#^Process1]] | ![[C Code Snippets#^Process2]] |
 
 Here, the value of turn will determine which of the two processes is allowed to enter its critical section first.
+
+```dataview 
+CALENDAR file.ctime 
+```
+
+
+```dataview
+
+TABLE
+file.ctime as Created
+FROM #ee
+SORT file.time ASC
+```
 

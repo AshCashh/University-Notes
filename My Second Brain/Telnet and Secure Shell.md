@@ -1,7 +1,11 @@
 ---
-alias: SSH
+aliases:
+  - SSH
+tags:
+  - networks
+Modified: 2024-07-03T19:32:35+10:00
+Created: 2023-09-02T13:36:52+10:00
 ---
-#networks
 Telnet and Secure Shell (SSH) are used to connect to a device across a [[Networks|Network]] via a command-line interface (CLI). Network administrators might use Telnet or SSH to connect to a mangled switch or router and view status information or perform configuration tasks by using the device's CLI. 
 
 # Telnet

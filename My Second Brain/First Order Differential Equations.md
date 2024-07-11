@@ -1,4 +1,8 @@
-#math
+---
+tags: [math]
+Created: 2023-06-29T20:02:28+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A first order [[Differential Equations|Differential Equation]] is an equation of the form $\cfrac{dy}{dx}=f(x,y)$. Where two variables ($x, y$) with its function $f(x,y)$ are defined on a region in the $xy$-plane. 
 
 ## Separable ODEs

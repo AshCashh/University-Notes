@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Inductors create voltage to oppose a change in current. The ratio of voltage to the rate of change of current through an inductor is its inductance, measured in Henrys (H):
 $$ v = L \frac{di}{dt} $$
  $$i(t) = \frac{1}{L}\int_0^t v(\tau)\space d\tau+ i(0){} $$

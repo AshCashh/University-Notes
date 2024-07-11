@@ -1,7 +1,9 @@
 ---
 alias: IDS/IPS
+tags: [networks]
+Created: 2023-09-16T18:30:02+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#networks
 # Intrusion Detection System
 An intrusion detection system (IDS) monitors network traffic for malicious packets or traffic patterns and reports identified security breaches to a management station. An IDS can be either a host-based or network-based system but typically passive.
 # Intrusion Prevention System

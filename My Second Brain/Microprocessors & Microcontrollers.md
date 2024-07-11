@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 # Microcontroller
 A microcontroller is a small computer on a single [[Integrated Circuits|Integrated Circuit]] chip. A microcontroller contains one or more CPUs along with memory and programmable input/output peripherals. Program memory in the form on RAM, flash or ROM is also often included on the chip. Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general purpose applications consisting of various discrete chips.
 

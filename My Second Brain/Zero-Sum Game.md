@@ -1,4 +1,8 @@
-#math
+---
+tags: [math]
+Created: 2023-07-06T09:05:02+10:00
+Modified: 2024-07-03T19:06:25+10:00
+---
 Zero-sum game is a [[Mathematics|Mathematical]] representation in [[Game Theory]] and economic theory of a situation that involves two sides, where the result is an advantage for one side and an equivalent loss for the other. In other words, player one's gain is equivalent to player two's loss, with the result that the net improvement in benefit of the game is zero.
 
 If the total gains of the participants are added up, and the total losses are subtracted, they will sum to zero. Examples of zero-sum games in daily life include games like poker, [[Chess]] and bridge, where one person gains and another person loses.

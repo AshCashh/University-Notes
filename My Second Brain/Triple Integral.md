@@ -1,4 +1,9 @@
-#math
+---
+tags: [math]
+Created: 2023-08-31T22:10:09+10:00
+Modified: 2024-07-03T19:28:24+10:00
+---
+[[Mathematics]]
 Consider a function $f: R^3\to R$ which is defined at all points within a 3-dimensional region $V$.
 Let $\Delta V=\Delta x\Delta y \Delta z$ be a small subregion of $V$. The triple integral of $f$ over $V$ is:
 $$\begin{align}
@@ -26,4 +31,3 @@ $$\begin{align}
 ![[Pasted image 20230831222228.png|centre|400]]
 
 
-# Change Variables in 

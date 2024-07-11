@@ -1,4 +1,8 @@
-#math
+---
+tags: [math]
+Created: 2023-06-30T17:49:29+10:00
+Modified: 2024-07-03T19:32:59+10:00
+---
 [[Mathematics]]
 # Infinite Series
 ## Sequences

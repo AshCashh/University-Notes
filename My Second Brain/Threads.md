@@ -1,4 +1,8 @@
-#cs #cs
+---
+tags: [cs]
+Created: 2023-08-14T12:58:19+10:00
+Modified: 2024-07-03T19:31:57+10:00
+---
 A thread is a basic unit of CPU utilisation; it comprises a thread ID, a program counter (PC), a register set, and a stack. It shares with other threads belonging to the same [[Process]] its code section, data section and other [[Operating Systems]] resources, such as open files and signals. A traditional process has a single thread of control. If a process has multiple threads of control, it can perform more than one task at a time.
 ![[Pasted image 20230814130201.png|centre|500]]
 # Motivation

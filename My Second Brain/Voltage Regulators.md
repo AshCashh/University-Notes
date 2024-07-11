@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:26:17+10:00
+---
 Most circuits require a clean DC power supply to operate. A [[Voltage]] regulator ensures that a DC power supply behaves like an ideal [[Voltage Source]] (stable voltage, no matter the current). 
 
 # Shunt Regulators

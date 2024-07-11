@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 If you have a [[Voltage]]-[[Current]] characteristic for two elements you can find the operating point when those two elements are connected together.
 ![[Pasted image 20230311160752.png|300]]
 

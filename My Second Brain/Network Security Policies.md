@@ -1,4 +1,8 @@
-#networks 
+---
+tags: [networks]
+Created: 2023-09-16T14:17:16+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 [[Network Security]] policies help provide a direction on which control framework can be built. They are documents that define a set of rules describing what is and isn't allowed on a network and will help secure the organisations data/assets against external and internal threads. These documents also mention ways of enforcing these rules and steps taken if the rules are breached.
 ## Determining Elements of a Network Security Policy:
 - **Access Control Policy**: Specifies how and when a user can access some network resource
@@ -24,7 +28,7 @@ Authentication is the process of verifying the identity of a user or device. Mul
 ## Auditing
 Auditing is the process of monitoring and recording the use of a system to ensure it is being used in accordance with the organisations security policy. It can be used to determine abnormal behaviour and potentially detect system or network intrusion attacks.
 ## Encryption 
-Encryption is the process of encoding and decoding data to make it unreachable to anyone without the correct key. It is used to protect data in transit and at rest. Encryption mechanisms can be used to achieve data confidentiality and integrity against attack such as:
+Encryption is the process of [[Encoding]] and decoding data to make it unreachable to anyone without the correct key. It is used to protect data in transit and at rest. Encryption mechanisms can be used to achieve data confidentiality and integrity against attack such as:
 - Forgery
 - Repudiation
 - Eavesdropping

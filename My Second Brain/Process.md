@@ -1,7 +1,9 @@
 ---
 alias: Processes
+tags: [cs, os]
+Created: 2023-08-03T20:20:16+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #os
 An [[Operating Systems]] executes a variety of programs, either a Batch system (jobs) or a Time-shared system (user program or task). A process is a program in execution and must progress in sequential fashion. A process consists of multiple parts:
 - **Text Section**, containing the executable code
 - The current activity, i.e. the **Program Counter** and the contents of the processors register

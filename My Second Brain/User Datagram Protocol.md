@@ -1,7 +1,11 @@
 ---
-alias: UDP
+aliases:
+  - UDP
+tags:
+  - networks
+Created: 2023-08-26T15:03:06+10:00
+Modified: 2024-07-03T19:35:32+10:00
 ---
-#cs #networks 
 User Datagram Protocol or UDP is a connectionless [[Open System Interconnection#Transport Layer|Transport Layer]] protocol designed for efficient communication of generally small amounts of data.
 
 The features on UDP consist of:

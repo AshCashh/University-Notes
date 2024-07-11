@@ -1,9 +1,12 @@
-#ee
+---
+tags:
+  - ee
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A current source is a [[Circuit Elements|Circuit Element]] that produces or dissipates [[Power]] with a specified [[Current]] at whatever voltage is required.
 - Indicated by the arrow encapsulated in a circle. 
 - The arrow indicates the direction of the current. 
-![Pasted image 20230222181706.png](app://local/Users/ashasaunders/Downloads/ash's%20vault/PNGs/Pasted%20image%2020230222181706.png?1677053826238)
-
 ## Characteristics 
 ![[Pasted image 20230311142120.png|200]]
 - Supplies constant current regardless of the voltage

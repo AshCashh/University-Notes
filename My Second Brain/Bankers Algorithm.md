@@ -1,4 +1,10 @@
-#os
+---
+tags:
+  - algorithm
+  - cs
+Created: 2023-10-20T00:00:00+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The [[Deadlock Prevention,Avoidance#Resource Allocation Graph Scheme|Resource-Allocation Graph]] algorithm is not applicable to a resource-allocation system with multiple instances of each resource type. Hence the banker's [[Algorithm]] is used. The name was chosen because the algorithm could be used in a banking system to ensure that the bank never allocated its available cash in such a way that it could no longer satisfy the needs of its customers.
 - Each [[Process]] must a priori claim its maximum use (number of instances)
 - When a process requests a resource it may have to wait

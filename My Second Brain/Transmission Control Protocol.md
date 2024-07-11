@@ -1,7 +1,12 @@
 ---
-alias: TCP
+aliases:
+  - TCP
+tags:
+  - cs
+  - networks
+Created: 2023-08-25T21:25:11+10:00
+Modified: 2024-07-03T19:35:32+10:00
 ---
-#cs #networks 
 If an application requires reliable data transfer, it uses TCP as the [[Open System Interconnection#Transport Layer|Transport Layer]] protocol. TCP provides reliability with the following features that aren't available in [[User Datagram Protocol|UDP]]:
 - Establishing a connection
 - Data Transfer

@@ -1,7 +1,12 @@
 ---
-alias: Supernet
+aliases:
+  - Supernet
+tags:
+  - cs
+  - networks
+Modified: 2024-07-03T19:34:32+10:00
+Created: 2023-08-11T11:16:08+10:00
 ---
-#cs #networks
 Supernetting also known as network summarisation, is the direct opposite of [[Subnetting]], in which multiple [[Networks]] are combined into a single large network known as supernets. Supernetting reallocates bits from the network portion of an [[Internet Protocol|IP]] address to the host portion, effectively making two or more smaller subnets into a larger supernet.
 
 It is used for route aggregation to reduce the size of routing tables. Here's how it works:

@@ -1,5 +1,9 @@
-#ee
-A Zener diode is similar to a regular [[Diodes|Diode]], but it has a specific reverse breakdown [[Voltage]]. The reverse breakdown voltage ($v_r$)is commonly 5V. 
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:23:44+10:00
+---
+A Zener diode is similar to a regular [[Diodes|Diode]], but it has a specific reverse breakdown [[Voltage]]. The reverse breakdown voltage ($v_r$)is commonly 5V. test
 ![[Pasted image 20230521165600.png|centre|300]]
 The ideal VI characteristic for a Zener diode is shown below,
 ![[Pasted image 20230521165815.png|centre|200]]

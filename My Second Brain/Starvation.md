@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [cs, os]
+Created: 2023-08-21T11:33:09+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 The implementation of a [[Mutex Locks & Semaphores#Semaphore Implementation|Semaphores]] with a waiting queue may result in a situation where two or more [[Process|Processes]] are waiting indefinitely for an event that can be caused only by one of the waiting processes. When such a state is reached, these processes are said to be deadlocked.
 
 To illustrate this, consider a system of two processes $P_0$ and $P_1$, each accessing two semaphores $S$ and $Q$, set to the value 1:

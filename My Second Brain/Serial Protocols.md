@@ -1,24 +1,28 @@
-#cs 
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A serial protocol is an agreed-upon standard by which two devices can communicate with each communicate with each other, enabling them to exchange data. [[UART]] and [[SPI]] are standards for transmitting through [[Serial Communication]].
 
 ## Requirements for a Serial Protocol
 A serial protocol must:
-- Able to recieve data during a transmission
+- Able to receive data during a transmission
 - Able to recover from errors
 - Engage in [[Flow Control]] 
-- Be simple to implement / understand for both the transmitter and reciever
+- Be simple to implement / understand for both the transmitter and receiver
 
 ## Symbols
-A symbol is the fundamental data type used in serial communication protocols, which can be comprised of several bits. THe number of bits is usually set by the underlying medium and depends on the [[UART#Baud Rate| Baud Rate]]. 
+A symbol is the fundamental data type used in serial communication protocols, which can be comprised of several bits. The number of bits is usually set by the underlying medium and depends on the [[UART#Baud Rate| Baud Rate]]. 
 
 Smaller symbols are more flexible and allow for more symbols to be transmitted, whereas larger symbols are more efficient and allow for more data to be transmitted.
 
 ## Messages
 If the information to be changed can be entirely encoded within a single symbol, there is no need for a message structure. However, more complex protocols require a message structure for large quantities of data or information of variable length. This is done by dividing the communication into discrete messages.
 
-## Encoding
+## [[Encoding]]
 The choice of encoding may also be of concern, depending on the communication medium, symbol length, and other factors such as human readability. For example using the entire ASCII character set may not be desirable as it is not human readable. Human readable encoding schemes usually limit the number of symbols to a small subset of the ASCII character set:
-- ASCII `32-126 (0x20-0x7E)` which uses 8-bit symbols
+- [[ASCII]] `32-126 (0x20-0x7E)` which uses 8-bit symbols
 - Base64 `(0-9, A-Z, a-z, +, /)` which encodes 6-bits into an 8-bit symbol.
 - Hexadecimal `(0-9, A-F)` which encodes 4-bits per symbol
 

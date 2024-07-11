@@ -1,4 +1,8 @@
-#ee
+---
+tags: [ee]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 Energy is the quantitative property that is transferred to a body or to a physical system, recognisable in the performance of [[Work]] and in the form of heat and light
 - The unit of measurment for energy is joule (J)
 

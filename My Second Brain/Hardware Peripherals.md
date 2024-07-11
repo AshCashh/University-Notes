@@ -1,4 +1,8 @@
-#cs
+---
+tags: [cs]
+Created: 2023-06-27T14:15:42+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 [[Microprocessors & Microcontrollers|Microcontrollers]] typically include a variety of hardware peripherals that remove the burden of having to write software for common functionality such as [[Pulse Width Modulation|PWM]] timers, [[Serial Communication]] and [[Analogue to Digital Conversion]].
 They can provide very precise timing and very fast (nanosecond) response times.
 Hardware peripherals can run independent of the CPU so that:

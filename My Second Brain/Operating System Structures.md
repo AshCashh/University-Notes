@@ -1,4 +1,8 @@
-#cs #os
+---
+tags: [os]
+Created: 2024-03-02T18:49:43+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A system as large and complex as a modern [[Operating Systems|Operating System]] must be engineered carefully if it is to function properly and be modified easily. A common approach is to partition the task into small components, or modules rather than have a single system. 
 ![[Pasted image 20230731135526.png|centre|400]]
 # Monolithic Structure

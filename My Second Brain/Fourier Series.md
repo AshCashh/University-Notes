@@ -1,6 +1,10 @@
-#math
+---
+tags: [math]
+Created: 2023-07-29T22:38:09+10:00
+Modified: 2024-07-03T19:35:33+10:00
+---
 A Fourier series is an expansion of a periodic function, in terms of an infinite sum of [[Trigonometric Functions]]. 
-
+[[Mathematics]]
 # Fourier Series Expansion
 The Fourier Series Expansion of a function $x(t)$ on the interval $[t_0,t_0+T]$ is given by:
 $$x_F(t)=a_0+\sum_{n=1}^{\infty}(a_n\space cos(2\pi nf_0t)+b_n\space sin(2\pi nf_0t))\tag{1}$$
@@ -40,7 +44,7 @@ a_n&=\cfrac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)\space cos\left(\cfrac{2\p
 \\
 b_n&=\cfrac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)\space sin\left(\cfrac{2\pi nt}{T}\right)\space dt,\qquad\text{for $n\geq1$} \\
 &=\cfrac{1}{\pi}\int_{-\pi}^0-sin(nt)\space dt+\cfrac{1}{\pi}\int_{0}^{\pi}sin(nt)\space dt\\
-&=\cfrac{1}{\pi}\left[\cfrac{-cos(nt)}{n}\right]_{-\pi}^0+\cfrac{1}{\pi}\left[\cfrac{cos(nt)}{n}\right]_0^{\pi} \\
+&=\cfrac{1}{\pi}\left[\cfrac{-cos(nt)}{n}\right]_{-\pi}^0+\cfrac{1}{\pi}\left[\cfrac{\cos(nt)}{n}\right]_0^{\pi} \\
 &=\cfrac{1}{\pi}\left(\cfrac{1}{n}-\cfrac{cos(-n\pi)}{n}\right)+\cfrac{1}{\pi}\left(\cfrac{-cos(n\pi)}{n}+\cfrac{1}{n}\right) \\
 &=\cfrac{2(1-cos(n\pi))}{n\pi} \\
 &=\cfrac{2(1-(-1)^n)}{n\pi} \\
@@ -48,6 +52,7 @@ b_n&=\cfrac{2}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)\space sin\left(\cfrac{2\p
 \end{align}
 
 $$
+
 The Fourier series for $f(t)$ is:
 $$\begin{align}
 f(t)&=a_0+\sum_{n=1}^{\infty}(a_n\space cos(n\omega t)+b_n\space sin(n\omega t)) \\
@@ -124,3 +129,4 @@ c_n&=\cfrac{1}{T}\left[\int_0^{\frac{T}{2}}1e^{-j2\pi nf_0t}\space dt+\int_{\fra
 &=\cfrac{1}{j\pi n}(1-cos(\pi n)) \\
 \end{align}
 $$
+$\mathbb{N}$

@@ -1,7 +1,9 @@
 ---
 alias: Mutex Locks, Semaphores
+tags: [cs, os]
+Created: 2023-08-21T10:08:06+10:00
+Modified: 2024-07-03T19:35:33+10:00
 ---
-#cs #os
 In [[Operating Systems]], designers build high-level software tools to solve the [[Process Synchronisation#Critical Section Problem|Critical Section Problem]]. The simplest of these tools is the Mutex Lock (where `mutex` is short for mutual exclusion). Designers use mutex lock to protect the critical section and thus prevent race conditions.
 
 That is, a [[Process]] must acquire the lock (using the `aquire()` function) before entering a critical section and releases the lock when it exists (using the `release()` function). 
@@ -13,7 +15,7 @@ The main disadvantage of such implementation is that it requires busy waiting, s
 
 |          Acquire()          |          Release()          |
 |:---------------------------:|:---------------------------:|
-| ![[Code Snippets#^acquire]] | ![[Code Snippets#^release]] |
+| ![[C Code Snippets#^acquire]] | ![[C Code Snippets#^release]] |
 
 # Semaphores
 A more robust tool that behaves very similar to [[Mutex Locks & Semaphores|Mutex Locks]] in solving the [[Process Synchronisation#Critical Section Problem|Critical Section Problem]], but can also provide more sophisticated ways for [[Process|Processes]] to synchronise their activities are semaphores.
@@ -22,7 +24,7 @@ A semaphore is an $S$ integer variable that is accessed only through two standar
 
 |          Wait()          |          Signal()          |
 |:------------------------:|:--------------------------:|
-| ![[Code Snippets#^wait]] | ![[Code Snippets#^signal]] |
+| ![[C Code Snippets#^wait]] | ![[C Code Snippets#^signal]] |
 
 All modifications to the $S$ variable in either operation must be executed atomically, that is, only one process can modify the value at a time.
 
@@ -48,6 +50,6 @@ Now the wait and signal operations can be modified as such:
 
 |           WaitModified           | SignalModified |
 |:--------------------------------:|:--------------:|
-| ![[Code Snippets#^WaitModified]] | ![[Code Snippets#^SignalModified]]               |
+| ![[C Code Snippets#^WaitModified]] | ![[C Code Snippets#^SignalModified]]               |
 
 However, this implementation can lead to [[Starvation|DeadLocks]].
